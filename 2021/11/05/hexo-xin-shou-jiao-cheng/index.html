@@ -515,7 +515,7 @@ markdown语法：
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    352
+                    353
                 </div>
                 
 
@@ -574,8 +574,9 @@ Ctrl+H  搜索并替换<span aria-hidden="true" class="line-numbers-rows"><span>
 <p><img src="/2021/11/05/hexo-xin-shou-jiao-cheng/2.png"></p>
 <ol start="2">
 <li><p>然后再修改<code>hexo</code>配置</p>
-<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown">_config.yml<span class="token code-snippet code keyword">`文件中修改`</span>
-post_asset_folder: false<span class="token code-snippet code keyword">`为`</span>post_asset_folder: true<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown">在_config.yml文件中，
+修改post_asset_folder: false
+为post_asset_folder: true<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
 <p>这样做的目的是为了在<code>hexo new post 文章名字</code>的时候在你的<code>source-&gt;_posts</code>里生成一个和你文章名字相同的文件夹。你可以把相关的文件放进里面以便博客<code>下载</code>或者<code>查阅</code></p>
 </li>
@@ -583,11 +584,13 @@ post_asset_folder: false<span class="token code-snippet code keyword">`为`</spa
 <p>使用快捷键<code>ctrl+shift+I</code>来创建一个<code>图片url</code>，如图</p>
 <p><img src="/2021/11/05/hexo-xin-shou-jiao-cheng/3.png"></p>
 <p>然后在<strong>（）</strong>里输入相对<code>图片路径</code>，格式为：<code>./文章名字/文件名称</code></p>
-<p>例如：<code>./hexo新手教程/1.png</code></p>
-<p>相对路径的写法:<code>./</code></p>
-<p>上级（父级）路径的写法：<code>../</code></p>
-<p>上两级路径的写法：<code>../../</code></p>
-</li>
+<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown">例如：./hexo新手教程/1.png
+
+相对路径的写法:./
+
+上级（父级）路径的写法：../
+
+上两级路径的写法：../../<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
 </ol>
 
                 
