@@ -522,7 +522,7 @@ linux是unix的开源软件。linux可以称为l">
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    3k
+                    2.9k
                 </div>
                 
 
@@ -610,11 +610,11 @@ linux是unix的开源软件。linux可以称为l">
 <p><strong>桥接</strong>：利用真实网卡，可以直接和真实机通信，但是要占用ip</p>
 <p>桥接设置的ip要和真机网段相同</p>
 <p><strong>net和host-only区别</strong>：net能访问互联网，host-only只能和本机通信</p>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">sudo su            #获取root权限
-ifconfig           #检查ip
-ifconfig ens33 192.168.110.2 #(设置一个ip) 
-#centos7会给没有设置网卡名称的自动设置，例如br0
-#在ifconfig中检查192网段的地址，就是这台linux的地址<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token function">sudo</span> <span class="token function">su</span>            <span class="token comment">#获取root权限</span>
+<span class="token function">ifconfig</span>           <span class="token comment">#检查ip</span>
+<span class="token function">ifconfig</span> ens33 <span class="token number">192.168</span>.110.2 <span class="token comment">#(设置一个ip) </span>
+<span class="token comment">#centos7会给没有设置网卡名称的自动设置，例如br0</span>
+<span class="token comment">#在ifconfig中检查192网段的地址，就是这台linux的地址</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p><img src="/2021/12/03/linux-bi-ji/image-20211111172025297.png" alt="image-20211111172025297"></p>
 <h4 id="使用ssh远程工具连接linux"><a href="#使用ssh远程工具连接linux" class="headerlink" title="使用ssh远程工具连接linux"></a>使用ssh远程工具连接linux</h4><p>找到ens33的inet写入即可连接</p>
@@ -623,10 +623,10 @@ ifconfig ens33 192.168.110.2 #(设置一个ip)
 <p><code>shell</code>是系统的用户界面，图形界面称<code>GUI</code>，字符界面称<code>CLI</code></p>
 <p><code>windows</code>的<code>GUI</code>是资源管理器称</p>
 <p><code>linux</code>的<code>GUI</code>是<code>GNOME</code>和<code>KDE</code>，统称<code>X window</code></p>
-<h3 id="linux命令格式"><a href="#linux命令格式" class="headerlink" title="linux命令格式"></a>linux命令格式</h3><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">#命令名[选项][参数]
-#命令名是描述命令功能的英文单词的缩写
-#选项是选择命令的功能，通常以‘-’开头。当有多个选项时可以只写一个‘-’，如：‘ls -l -a’与ls -la相同。另外部分选项以‘--’开头，如‘ls --help’
-#参数是你要处理的对象<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="linux命令格式"><a href="#linux命令格式" class="headerlink" title="linux命令格式"></a>linux命令格式</h3><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token comment">#命令名[选项][参数]</span>
+<span class="token comment">#命令名是描述命令功能的英文单词的缩写</span>
+<span class="token comment">#选项是选择命令的功能，通常以‘-’开头。当有多个选项时可以只写一个‘-’，如：‘ls -l -a’与ls -la相同。另外部分选项以‘--’开头，如‘ls --help’</span>
+<span class="token comment">#参数是你要处理的对象</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h3 id="linux的系统特性"><a href="#linux的系统特性" class="headerlink" title="linux的系统特性"></a>linux的系统特性</h3><ol>
 <li>一切皆文件</li>
@@ -635,11 +635,11 @@ ifconfig ens33 192.168.110.2 #(设置一个ip)
 <li>使用纯文本文件保存信息</li>
 </ol>
 <h2 id="linux命令、通配符、技巧"><a href="#linux命令、通配符、技巧" class="headerlink" title="linux命令、通配符、技巧"></a>linux命令、通配符、技巧</h2><p>所有命令都可以在后面添加–help来查看命令功能</p>
-<h3 id="文件目录操作命令"><a href="#文件目录操作命令" class="headerlink" title="文件目录操作命令"></a>文件目录操作命令</h3><h4 id="ls命令"><a href="#ls命令" class="headerlink" title="ls命令"></a>ls命令</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">ls -l &#x2F;***  #文件查看命令
--l #显示详细信息
--a #显示隐藏信息
--d #显示文件属性
--h #人性化显示文件大小<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="文件目录操作命令"><a href="#文件目录操作命令" class="headerlink" title="文件目录操作命令"></a>文件目录操作命令</h3><h4 id="ls命令"><a href="#ls命令" class="headerlink" title="ls命令"></a>ls命令</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token function">ls</span> -l /***  <span class="token comment">#文件查看命令</span>
+-l <span class="token comment">#显示详细信息</span>
+-a <span class="token comment">#显示隐藏信息</span>
+-d <span class="token comment">#显示文件属性</span>
+-h <span class="token comment">#人性化显示文件大小</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p><strong>内容的含义：</strong></p>
 <p><strong>第一组，首字符意思：</strong></p>
@@ -661,33 +661,33 @@ ifconfig ens33 192.168.110.2 #(设置一个ip)
 <p><strong>第五组</strong>：文件的大小，只显示目录大小</p>
 <p><strong>第六组：</strong>修改时间</p>
 <p><strong>第七组：</strong>文件名</p>
-<h4 id="touch、mkdir、rm命令"><a href="#touch、mkdir、rm命令" class="headerlink" title="touch、mkdir、rm命令"></a>touch、mkdir、rm命令</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">touch a #创建一个空白文件
+<h4 id="touch、mkdir、rm命令"><a href="#touch、mkdir、rm命令" class="headerlink" title="touch、mkdir、rm命令"></a>touch、mkdir、rm命令</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token function">touch</span> a <span class="token comment">#创建一个空白文件</span>
 
-mkdir text #创建一个空目录（make dictory)
-mkdir -p x&#x2F;y&#x2F;z #一次性创建多级目录
-mkdir a b c #一次性创建多个目录
+<span class="token function">mkdir</span> text <span class="token comment">#创建一个空目录（make dictory)</span>
+<span class="token function">mkdir</span> -p x/y/z <span class="token comment">#一次性创建多级目录</span>
+<span class="token function">mkdir</span> a b c <span class="token comment">#一次性创建多个目录</span>
 
-rmdir a #删除空目录(remove dictory)
+<span class="token function">rmdir</span> a <span class="token comment">#删除空目录(remove dictory)</span>
 
-rm a #删除文件(remove)
-rm -f #强制删除文件，无需确认(force)
-rm -r #删除目录
-rm -rf #强制删除目录<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token function">rm</span> a <span class="token comment">#删除文件(remove)</span>
+<span class="token function">rm</span> -f <span class="token comment">#强制删除文件，无需确认(force)</span>
+<span class="token function">rm</span> -r <span class="token comment">#删除目录</span>
+<span class="token function">rm</span> -rf <span class="token comment">#强制删除目录</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h4 id="cp和mv命令"><a href="#cp和mv命令" class="headerlink" title="cp和mv命令"></a>cp和mv命令</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">cp 源文件 目标文件 #复制文件(copy)
-cp &#x2F;etc&#x2F;fstab &#x2F;tmp #复制文件不改名
-cp &#x2F;etc&#x2F;fstab &#x2F;tmp&#x2F;hi.txt #复制文件改名成hi.txt
-cp -r &#x2F;home &#x2F;tmp&#x2F;test&#x2F; #把home目录复制到指定目录
-cp -p #保持使用权限不变
-mv 源文件名 更改后的文件名 #更改文件名<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h4 id="cp和mv命令"><a href="#cp和mv命令" class="headerlink" title="cp和mv命令"></a>cp和mv命令</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token function">cp</span> 源文件 目标文件 <span class="token comment">#复制文件(copy)</span>
+<span class="token function">cp</span> /etc/fstab /tmp <span class="token comment">#复制文件不改名</span>
+<span class="token function">cp</span> /etc/fstab /tmp/hi.txt <span class="token comment">#复制文件改名成hi.txt</span>
+<span class="token function">cp</span> -r /home /tmp/test/ <span class="token comment">#把home目录复制到指定目录</span>
+<span class="token function">cp</span> -p <span class="token comment">#保持使用权限不变</span>
+<span class="token function">mv</span> 源文件名 更改后的文件名 <span class="token comment">#更改文件名</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h4 id="通配符"><a href="#通配符" class="headerlink" title="通配符"></a>通配符</h4><p><code>*</code>可以匹配<strong>任意数量</strong>的<strong>任意字符</strong>,例如：</p>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">ls -d &#x2F;etc&#x2F;pa* #表示找etc下所有以pa开头的文件
-#path path1 path-2 等<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token function">ls</span> -d /etc/pa* <span class="token comment">#表示找etc下所有以pa开头的文件</span>
+<span class="token comment">#path path1 path-2 等</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
 <p><code>？</code>可以匹配<strong>相应位置</strong>的<strong>单个任意字符</strong>,例如：</p>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">ls -d &#x2F;etc&#x2F;pa? #表示找etc下所有pa+（任意字符）的文件
-#pat pa2 pa+ 等<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token function">ls</span> -d /etc/pa? <span class="token comment">#表示找etc下所有pa+（任意字符）的文件</span>
+<span class="token comment">#pat pa2 pa+ 等</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
 <p><code>[]</code>匹配<strong>指定范围内</strong>的<strong>单个任意字符</strong>,例如：</p>
 <ol>
@@ -695,80 +695,80 @@ mv 源文件名 更改后的文件名 #更改文件名<span aria-hidden="true" c
 <li>[0-9]表示范围0-9</li>
 <li>[!edf]表示非def的范围</li>
 </ol>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">ls -d &#x2F;dev&#x2F;[df]?? #表示找dev下所有d&amp;f+?+?的文件
-#dvd fb0 dcd 等
-ls -d &#x2F;dev&#x2F;??[0-9] #表示找dev下?+?+0到9的文件
-#aa1 bb2 ca4 等
-ls -d &#x2F;dev&#x2F;[!fhi]* #表示开头不能是fhi的文件，！表示取反<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token function">ls</span> -d /dev/<span class="token punctuation">[</span>df<span class="token punctuation">]</span>?? <span class="token comment">#表示找dev下所有d&amp;f+?+?的文件</span>
+<span class="token comment">#dvd fb0 dcd 等</span>
+<span class="token function">ls</span> -d /dev/??<span class="token punctuation">[</span><span class="token number">0</span>-9<span class="token punctuation">]</span> <span class="token comment">#表示找dev下?+?+0到9的文件</span>
+<span class="token comment">#aa1 bb2 ca4 等</span>
+<span class="token function">ls</span> -d /dev/<span class="token punctuation">[</span><span class="token operator">!</span>fhi<span class="token punctuation">]</span>* <span class="token comment">#表示开头不能是fhi的文件，！表示取反</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p><code>&#123;&#125;</code>可以包含一个以逗号分隔的路径列表（<strong>非通配符</strong>）</p>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">mkdir &#x2F;tmp&#x2F;&#123;a,b,c&#125; 
-#表示批量创建了&#x2F;tmp&#x2F;a &#x2F;tmp&#x2F;b &#x2F;tmp&#x2F;c的三个目录
-touch &#x2F;tmp&#x2F;&#123;a,b,c&#125;.txt
-#表示批量创建了&#x2F;tmp&#x2F;a.txt &#x2F;tmp&#x2F;b.txt &#x2F;tmp&#x2F;c.txt的三个文件<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token function">mkdir</span> /tmp/<span class="token punctuation">&#123;</span>a,b,c<span class="token punctuation">&#125;</span> 
+<span class="token comment">#表示批量创建了/tmp/a /tmp/b /tmp/c的三个目录</span>
+<span class="token function">touch</span> /tmp/<span class="token punctuation">&#123;</span>a,b,c<span class="token punctuation">&#125;</span>.txt
+<span class="token comment">#表示批量创建了/tmp/a.txt /tmp/b.txt /tmp/c.txt的三个文件</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h4 id="命令调用技巧"><a href="#命令调用技巧" class="headerlink" title="命令调用技巧"></a>命令调用技巧</h4><ol>
 <li><p>无法记住完整的<strong>命令</strong>或<strong>路径</strong>按下<code>tab</code>自动补全，按<strong>两下</strong>可以列出指定字符开头的命令或路径,例如：</p>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">system #tab2连击可以列出所有以system开头的命令
-#system-config-abrt  systemd-coredumpctl等<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></li>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">system <span class="token comment">#tab2连击可以列出所有以system开头的命令</span>
+<span class="token comment">#system-config-abrt  systemd-coredumpctl等</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></li>
 <li><p>调用上条命令，按下<code>↑</code>键即可</p>
 </li>
 <li><p>调用上条命令的路径，输入!$,例如：</p>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">ls -l !$<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token function">ls</span> -l <span class="token operator">!</span>$<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>或者在写完的命令后按<code>ESC+.</code></p>
 </li>
 <li><p>查询命令的历史记录，输入<code>history</code>即可</p>
 </li>
 </ol>
-<h3 id="文件内容操作命令"><a href="#文件内容操作命令" class="headerlink" title="文件内容操作命令"></a>文件内容操作命令</h3><h4 id="cat、more、less、head、tail命令"><a href="#cat、more、less、head、tail命令" class="headerlink" title="cat、more、less、head、tail命令"></a>cat、more、less、head、tail命令</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">cat #查看文件内容,链接多个文件内容（concarebate），只能查看文本信息，不能查看可执行文件
-cat &#x2F;etc&#x2F;sudoers #显示sudoers的纯文本信息
-cat &#x2F;etc&#x2F;redhat-release #查看文件系统版本
-uname -a #可以查看系统信息，例如kernel内核版本
-cat -n #显示文本添加行号
-more #分页显示满屏暂停，空格翻页，回车加行，不能往上看
-less #不会自动退出，按q退出
-head #查看文件的前10行
-head -3 #查看文件的前3行
-tail #查看文件最后10行
-tail -f #实时查看文件新增内容
-tail -f &#x2F;var&#x2F;log&#x2F;messages #查看实时日志信息<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="文件内容操作命令"><a href="#文件内容操作命令" class="headerlink" title="文件内容操作命令"></a>文件内容操作命令</h3><h4 id="cat、more、less、head、tail命令"><a href="#cat、more、less、head、tail命令" class="headerlink" title="cat、more、less、head、tail命令"></a>cat、more、less、head、tail命令</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token function">cat</span> <span class="token comment">#查看文件内容,链接多个文件内容（concarebate），只能查看文本信息，不能查看可执行文件</span>
+<span class="token function">cat</span> /etc/sudoers <span class="token comment">#显示sudoers的纯文本信息</span>
+<span class="token function">cat</span> /etc/redhat-release <span class="token comment">#查看文件系统版本</span>
+<span class="token function">uname</span> -a <span class="token comment">#可以查看系统信息，例如kernel内核版本</span>
+<span class="token function">cat</span> -n <span class="token comment">#显示文本添加行号</span>
+<span class="token function">more</span> <span class="token comment">#分页显示满屏暂停，空格翻页，回车加行，不能往上看</span>
+<span class="token function">less</span> <span class="token comment">#不会自动退出，按q退出</span>
+<span class="token function">head</span> <span class="token comment">#查看文件的前10行</span>
+<span class="token function">head</span> -3 <span class="token comment">#查看文件的前3行</span>
+<span class="token function">tail</span> <span class="token comment">#查看文件最后10行</span>
+<span class="token function">tail</span> -f <span class="token comment">#实时查看文件新增内容</span>
+<span class="token function">tail</span> -f /var/log/messages <span class="token comment">#查看实时日志信息</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h4 id="wc、echo命令"><a href="#wc、echo命令" class="headerlink" title="wc、echo命令"></a>wc、echo命令</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">wc #统计行数、单词数、字节数（word count）
-wc -l #统计行数
-echo #输出内容
-echo &#39;hello world!&#39; #输出hello world!在屏幕
-echo &#39;hello world!&#39; &gt; a.txt #把hello world!重定向输出至a.txt
+<h4 id="wc、echo命令"><a href="#wc、echo命令" class="headerlink" title="wc、echo命令"></a>wc、echo命令</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token function">wc</span> <span class="token comment">#统计行数、单词数、字节数（word count）</span>
+<span class="token function">wc</span> -l <span class="token comment">#统计行数</span>
+<span class="token builtin class-name">echo</span> <span class="token comment">#输出内容</span>
+<span class="token builtin class-name">echo</span> <span class="token string">'hello world!'</span> <span class="token comment">#输出hello world!在屏幕</span>
+<span class="token builtin class-name">echo</span> <span class="token string">'hello world!'</span> <span class="token operator">></span> a.txt <span class="token comment">#把hello world!重定向输出至a.txt</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h4 id="grep命令"><a href="#grep命令" class="headerlink" title="grep命令"></a>grep命令</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">grep &quot;root&quot; &#x2F;etc&#x2F;password #查找possword文件里包含root的内容
-grep -n &quot;root&quot; &#x2F;etc&#x2F;password #显示行号
-grep -v &quot;root&quot; &#x2F;etc&#x2F;password #显示不包含root的内容
-grep -v &quot;^$&quot; &#x2F;etc&#x2F;fstab #查看文件不是空白行的内容
-grep -w &quot;num&quot; #精确匹配单词
-grep -r &#39;pass&#39; #递归查找当前目录下所有包含pass的文件
-grep &quot;^root&quot; &#x2F;etc&#x2F;password #找possword文件里开头为root的内容
-grep &quot;root$&quot; &#x2F;etc&#x2F;password #找possword文件里结尾为root的内容<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h4 id="grep命令"><a href="#grep命令" class="headerlink" title="grep命令"></a>grep命令</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token function">grep</span> <span class="token string">"root"</span> /etc/password <span class="token comment">#查找possword文件里包含root的内容</span>
+<span class="token function">grep</span> -n <span class="token string">"root"</span> /etc/password <span class="token comment">#显示行号</span>
+<span class="token function">grep</span> -v <span class="token string">"root"</span> /etc/password <span class="token comment">#显示不包含root的内容</span>
+<span class="token function">grep</span> -v <span class="token string">"^$"</span> /etc/fstab <span class="token comment">#查看文件不是空白行的内容</span>
+<span class="token function">grep</span> -w <span class="token string">"num"</span> <span class="token comment">#精确匹配单词</span>
+<span class="token function">grep</span> -r <span class="token string">'pass'</span> <span class="token comment">#递归查找当前目录下所有包含pass的文件</span>
+<span class="token function">grep</span> <span class="token string">"^root"</span> /etc/password <span class="token comment">#找possword文件里开头为root的内容</span>
+<span class="token function">grep</span> <span class="token string">"root$"</span> /etc/password <span class="token comment">#找possword文件里结尾为root的内容</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p>grep命令只支持正则表达式（不支持通配符）：</p>
 <p>‘^’+word 以word开头</p>
 <p>word+’$’ 以word结尾</p>
 <p>grep默认区分大小写</p>
-<h4 id="diff命令"><a href="#diff命令" class="headerlink" title="diff命令"></a>diff命令</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">diff 文件1 文件2 #比较文件文本的不同(different)
-cp .bashrc .bashrc.bak #复制启动项文件
-diff .bashrc .bashrc.bak #每次开机检查启动项是否被修改<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h4 id="diff命令"><a href="#diff命令" class="headerlink" title="diff命令"></a>diff命令</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token function">diff</span> 文件1 文件2 <span class="token comment">#比较文件文本的不同(different)</span>
+<span class="token function">cp</span> .bashrc .bashrc.bak <span class="token comment">#复制启动项文件</span>
+<span class="token function">diff</span> .bashrc .bashrc.bak <span class="token comment">#每次开机检查启动项是否被修改</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
 <p>显示结果中，a，d，c分别代表增加、删除、修改。’&lt;’属于前面的文件，’&gt;’属于后面的文件。</p>
-<h3 id="日期和时间相关命令"><a href="#日期和时间相关命令" class="headerlink" title="日期和时间相关命令"></a>日期和时间相关命令</h3><h4 id="date、hwclock、cal命令"><a href="#date、hwclock、cal命令" class="headerlink" title="date、hwclock、cal命令"></a>date、hwclock、cal命令</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">date +%F #查询年月日格式
-date --help #帮助里有很多格式
-cp &#x2F;etc&#x2F;passwd &#x2F;tmp&#x2F;passwd.bak.$(date +%F)#备份passwd文件并加上.日期
+<h3 id="日期和时间相关命令"><a href="#日期和时间相关命令" class="headerlink" title="日期和时间相关命令"></a>日期和时间相关命令</h3><h4 id="date、hwclock、cal命令"><a href="#date、hwclock、cal命令" class="headerlink" title="date、hwclock、cal命令"></a>date、hwclock、cal命令</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token function">date</span> +%F <span class="token comment">#查询年月日格式</span>
+<span class="token function">date</span> --help <span class="token comment">#帮助里有很多格式</span>
+<span class="token function">cp</span> /etc/passwd /tmp/passwd.bak.<span class="token variable"><span class="token variable">$(</span><span class="token function">date</span> +%F<span class="token variable">)</span></span><span class="token comment">#备份passwd文件并加上.日期</span>
 
-hwclock #查询CMOS(BIOS)硬件时钟
+hwclock <span class="token comment">#查询CMOS(BIOS)硬件时钟</span>
 
-cal 2021 #显示2021的日历
-cal 1 2021 #显示2021年一月的日历<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token function">cal</span> <span class="token number">2021</span> <span class="token comment">#显示2021的日历</span>
+<span class="token function">cal</span> <span class="token number">1</span> <span class="token number">2021</span> <span class="token comment">#显示2021年一月的日历</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h4 id="stat命令"><a href="#stat命令" class="headerlink" title="stat命令"></a>stat命令</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">stat text.txt #查看文件元数据(windows的属性)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h4 id="stat命令"><a href="#stat命令" class="headerlink" title="stat命令"></a>stat命令</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token function">stat</span> text.txt <span class="token comment">#查看文件元数据(windows的属性)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>元数据：文件使用权限，大小，文件名称、属性等。</p>
 <p>最近访问时间(access time): 查看、读取文件内容的时间。</p>
@@ -776,27 +776,27 @@ cal 1 2021 #显示2021年一月的日历<span aria-hidden="true" class="line-num
 <p>最近改动时间(change time): 文件元数据改变的时间。</p>
 <h3 id="文件查找命令"><a href="#文件查找命令" class="headerlink" title="文件查找命令"></a>文件查找命令</h3><h4 id="locate、find命令"><a href="#locate、find命令" class="headerlink" title="locate、find命令"></a>locate、find命令</h4><p>与grep不同，locate相当于windows的搜索。但是locate依赖于搜索数据库，无法对新建文件进行查找，也无法掠过刚删除的文件。有滞后性。</p>
 <p>查找文件一般用find命令！</p>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">locate ssd_config #快速的文件查找命令
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token function">locate</span> ssd_config <span class="token comment">#快速的文件查找命令</span>
 
-find [查找起始路径][选项][查找条件][处理动作]
-find &#x2F;etc -name &quot;passwd&quot; #查找名字叫passwd的文件
-find &#x2F;etc -name &quot;*passwd*&quot; #多级(递归)查找名字里含有pass的文件
-find &#x2F;etc -iname &quot;passwd&quot; #忽略大小写查找名字叫passwd的文件
-find -empty &#x2F;root #查找空目录<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token function">find</span> <span class="token punctuation">[</span>查找起始路径<span class="token punctuation">]</span><span class="token punctuation">[</span>选项<span class="token punctuation">]</span><span class="token punctuation">[</span>查找条件<span class="token punctuation">]</span><span class="token punctuation">[</span>处理动作<span class="token punctuation">]</span>
+<span class="token function">find</span> /etc -name <span class="token string">"passwd"</span> <span class="token comment">#查找名字叫passwd的文件</span>
+<span class="token function">find</span> /etc -name <span class="token string">"*passwd*"</span> <span class="token comment">#多级(递归)查找名字里含有pass的文件</span>
+<span class="token function">find</span> /etc -iname <span class="token string">"passwd"</span> <span class="token comment">#忽略大小写查找名字叫passwd的文件</span>
+<span class="token function">find</span> -empty /root <span class="token comment">#查找空目录</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p>按文件类型查找：普通文件(f)、目录(d)、符号链接文件(l)、块设备文件(b)、字符设备文件(c)等。</p>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">find &#x2F;boot -type d #查找子目录<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token function">find</span> /boot -type d <span class="token comment">#查找子目录</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>处理动作用法:</p>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">find &#x2F;boot -type d -ls #查看boot文件的详细信息
-find &#x2F;boot -empty -type d #查看空目录
-find &#x2F;boot -empty -type f #查看空文件
-find &#x2F;boot -ctime -1 #查看最近一天改动的文件
-find &#x2F;boot -cmin -60 #查看最近一个小时改动的文件
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token function">find</span> /boot -type d -ls <span class="token comment">#查看boot文件的详细信息</span>
+<span class="token function">find</span> /boot -empty -type d <span class="token comment">#查看空目录</span>
+<span class="token function">find</span> /boot -empty -type f <span class="token comment">#查看空文件</span>
+<span class="token function">find</span> /boot -ctime -1 <span class="token comment">#查看最近一天改动的文件</span>
+<span class="token function">find</span> /boot -cmin -60 <span class="token comment">#查看最近一个小时改动的文件</span>
 
-find &#x2F;etc -name &quot;*ssh*&quot; -type f -exec cp &#123;&#125; &#x2F;tmp&#x2F;ssh \;#把查到到的结果复制到tmp&#x2F;ssh里，其中&#123;&#125;代表查找到的结果, \;表示结束
-find &#x2F;tmp -name &quot;*.txt&quot; -exec rm -f &#123;&#125; \; #把tmp文件下的所有以txt后缀的文件全删除
-rm -f &#x2F;tmp&#x2F;*.txt #只能删除tmp文件里的.txt文件<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token function">find</span> /etc -name <span class="token string">"*ssh*"</span> -type f -exec <span class="token function">cp</span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span> /tmp/ssh <span class="token punctuation">\</span><span class="token punctuation">;</span><span class="token comment">#把查到到的结果复制到tmp/ssh里，其中&#123;&#125;代表查找到的结果, \;表示结束</span>
+<span class="token function">find</span> /tmp -name <span class="token string">"*.txt"</span> -exec <span class="token function">rm</span> -f <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span> <span class="token punctuation">\</span><span class="token punctuation">;</span> <span class="token comment">#把tmp文件下的所有以txt后缀的文件全删除</span>
+<span class="token function">rm</span> -f /tmp/*.txt <span class="token comment">#只能删除tmp文件里的.txt文件</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h4 id="xargs命令——find辅助命令"><a href="#xargs命令——find辅助命令" class="headerlink" title="xargs命令——find辅助命令"></a>xargs命令——find辅助命令</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
@@ -804,8 +804,8 @@ rm -f &#x2F;tmp&#x2F;*.txt #只能删除tmp文件里的.txt文件<span aria-hidd
 <p>默认在命令模式</p>
 <p>按<code>a、i、o</code>进入输入模式</p>
 <p>按<code>：</code>键进入末行模式</p>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">vim[文件名]
-:set nu + 回车 #写入行号
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">vim<span class="token punctuation">[</span>文件名<span class="token punctuation">]</span>
+:set nu + 回车 <span class="token comment">#写入行号</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
 <h4 id="命令模式操作："><a href="#命令模式操作：" class="headerlink" title="命令模式操作："></a>命令模式操作：</h4><p><img src="/2021/12/03/linux-bi-ji/image-20211201203234659.png" alt="image-20211201203234659"></p>
@@ -1052,18 +1052,17 @@ rm -f &#x2F;tmp&#x2F;*.txt #只能删除tmp文件里的.txt文件<span aria-hidd
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/12/03/linux-bi-ji/">
+                <a href="/2021/12/03/ru-he-jie-jue-win10-dai-li-jiao-ben-wu-fa-guan-bi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="Linux笔记">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="如何解决win10代理脚本无法关闭">
                         
-                        <span class="card-title">Linux笔记</span>
+                        <span class="card-title">如何解决win10代理脚本无法关闭</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1073,22 +1072,21 @@ rm -f &#x2F;tmp&#x2F;*.txt #只能删除tmp文件里的.txt文件<span aria-hidd
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-03
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-12-03
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Linux%E6%95%99%E7%A8%8B/" class="post-category">
-                                    Linux教程
+                            <a href="/categories/win10%E5%B0%8F%E6%AF%9B%E7%97%85/" class="post-category">
+                                    win10小毛病
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
@@ -1107,13 +1105,13 @@ rm -f &#x2F;tmp&#x2F;*.txt #只能删除tmp文件里的.txt文件<span aria-hidd
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/12/03/ru-he-jie-jue-win10-dai-li-jiao-ben-wu-fa-guan-bi/">
+                <a href="/2021/11/05/hexo-xin-shou-jiao-cheng/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="如何解决win10代理脚本无法关闭">
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="hexo新手教程">
                         
-                        <span class="card-title">如何解决win10代理脚本无法关闭</span>
+                        <span class="card-title">hexo新手教程</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1124,14 +1122,14 @@ rm -f &#x2F;tmp&#x2F;*.txt #只能删除tmp文件里的.txt文件<span aria-hidd
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-03
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-05
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/win10%E5%B0%8F%E6%AF%9B%E7%97%85/" class="post-category">
-                                    win10小毛病
+                            <a href="/categories/hexo%E6%95%99%E7%A8%8B/" class="post-category">
+                                    hexo教程
                                 </a>
                             
                             
@@ -1314,7 +1312,7 @@ rm -f &#x2F;tmp&#x2F;*.txt #只能删除tmp文件里的.txt文件<span aria-hidd
         <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
                    server="netease"
                    type="playlist"
-                   id="503838841"
+                   id="3224336193"
                    fixed='true'
                    autoplay='false'
                    theme='#42b983'
