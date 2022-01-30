@@ -8,9 +8,9 @@
     <meta name="description" content="理脚本无法更改今天发现windows自动代理脚本卡http://127.0.0.1:86/ 而且无法更改
 这里借鉴一张网上的图来说明
 
-如何解决？首先win+R输入regedit`打开注册表
+如何解决？首先win+R输入regedit打开注册表
 找到以下路径：
-计算机\HKEY_LOCAL_M">
+计算机\HKEY_LOCAL_MA">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -551,19 +551,19 @@
                 <h3 id="理脚本无法更改"><a href="#理脚本无法更改" class="headerlink" title="理脚本无法更改"></a>理脚本无法更改</h3><p>今天发现windows自动代理脚本卡<a target="_blank" rel="noopener" href="http://127.0.0.1:86/">http://127.0.0.1:86/</a> 而且无法更改</p>
 <p>这里借鉴一张网上的图来说明</p>
 <p><img src="/2021/12/03/ru-he-jie-jue-win10-dai-li-jiao-ben-wu-fa-guan-bi/1.png" alt="1"></p>
-<h3 id="如何解决？"><a href="#如何解决？" class="headerlink" title="如何解决？"></a>如何解决？</h3><p>首先win+R<code>输入</code>regedit`打开<strong>注册表</strong></p>
-<p>找到以下路径：</p>
+<h3 id="如何解决？"><a href="#如何解决？" class="headerlink" title="如何解决？"></a>如何解决？</h3><p>首先win+R输入<code>regedit</code>打开<strong>注册表</strong></p>
+<p><strong>找到以下路径</strong>：</p>
 <pre class="line-numbers language-none"><code class="language-none">计算机\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\Internet Settings<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<p><img src="/2021/12/03/ru-he-jie-jue-win10-dai-li-jiao-ben-wu-fa-guan-bi/2.png" alt="2"></p>
+<p><img src="/2021/12/03/ru-he-jie-jue-win10-dai-li-jiao-ben-wu-fa-guan-bi/2.png"></p>
 <p>右键<code>Internet Settings</code>选择权限</p>
-<p><img src="/2021/12/03/ru-he-jie-jue-win10-dai-li-jiao-ben-wu-fa-guan-bi/3.png" alt="3"></p>
+<p><img src="/2021/12/03/ru-he-jie-jue-win10-dai-li-jiao-ben-wu-fa-guan-bi/3.png"></p>
 <p>将<code>all appliation packages</code>设置为完全控制后，点击应用和确定</p>
-<p><img src="/2021/12/03/ru-he-jie-jue-win10-dai-li-jiao-ben-wu-fa-guan-bi/4.png" alt="4"></p>
+<p><img src="/2021/12/03/ru-he-jie-jue-win10-dai-li-jiao-ben-wu-fa-guan-bi/4.png"></p>
 <p>你可以把proxysetting的键值对更改为1</p>
-<p><img src="/2021/12/03/ru-he-jie-jue-win10-dai-li-jiao-ben-wu-fa-guan-bi/5.png" alt="5"></p>
+<p><img src="/2021/12/03/ru-he-jie-jue-win10-dai-li-jiao-ben-wu-fa-guan-bi/5.png"></p>
 <p>也可以直接删除该文件来解决问题。</p>
-<p><img src="/2021/12/03/ru-he-jie-jue-win10-dai-li-jiao-ben-wu-fa-guan-bi/6.png" alt="6"></p>
+<p><img src="/2021/12/03/ru-he-jie-jue-win10-dai-li-jiao-ben-wu-fa-guan-bi/6.png"></p>
 <p>回到代理设置可以发现设置使用脚本代理可以关闭了</p>
 
                 
@@ -802,18 +802,17 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/12/03/ru-he-jie-jue-win10-dai-li-jiao-ben-wu-fa-guan-bi/">
+                <a href="/2021/12/03/linux-bi-ji/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="如何解决win10代理脚本无法关闭">
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="Linux笔记">
                         
-                        <span class="card-title">如何解决win10代理脚本无法关闭</span>
+                        <span class="card-title">Linux笔记</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -823,22 +822,21 @@
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-03
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-12-03
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/win10%E5%B0%8F%E6%AF%9B%E7%97%85/" class="post-category">
-                                    win10小毛病
+                            <a href="/categories/Linux%E6%95%99%E7%A8%8B/" class="post-category">
+                                    Linux教程
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
@@ -857,13 +855,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/12/03/linux-bi-ji/">
+                <a href="/2021/11/05/hexo-xin-shou-jiao-cheng/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="Linux笔记">
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="hexo新手教程">
                         
-                        <span class="card-title">Linux笔记</span>
+                        <span class="card-title">hexo新手教程</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -874,14 +872,14 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-03
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-11-05
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Linux%E6%95%99%E7%A8%8B/" class="post-category">
-                                    Linux教程
+                            <a href="/categories/hexo%E6%95%99%E7%A8%8B/" class="post-category">
+                                    hexo教程
                                 </a>
                             
                             
