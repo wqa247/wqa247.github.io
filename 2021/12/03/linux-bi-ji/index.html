@@ -5,11 +5,33 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="Linux笔记, 次元客栈">
-    <meta name="description" content="linux大介绍UNIX版本
-Solaris是我们可以学习的unix操作系统，另外两个无法在家用机安装。
-Linux简介
-linux是unix的子分支。mac os是类unix操作系统。
-linux是unix的开源软件。linux可以称为l">
+    <meta name="description" content="linux大介绍UNIX主要发行版本
+
+
+操作系统
+公司
+硬件平台
+
+
+
+AIX
+IBM
+PowerPC
+
+
+HP-UX
+HP
+PA-RISC
+
+
+Solaris
+Sun
+SPARC
+
+
+Linux
+Red Hat, Ubuntu
+IA(I">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -467,21 +489,21 @@ linux是unix的开源软件。linux可以称为l">
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-12-03
+                    2022-07-25
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    3k
+                    7.6k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    11 分
+                    30 分
                 </div>
                 
 
@@ -499,21 +521,66 @@ linux是unix的开源软件。linux可以称为l">
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="linux大介绍"><a href="#linux大介绍" class="headerlink" title="linux大介绍"></a>linux大介绍</h2><h3 id="UNIX版本"><a href="#UNIX版本" class="headerlink" title="UNIX版本"></a>UNIX版本</h3><p><img src="/2021/12/03/linux-bi-ji/image-20211108230827569.png" alt="image-20211108230827569"></p>
-<p>Solaris是我们可以学习的unix操作系统，另外两个无法在家用机安装。</p>
-<h3 id="Linux简介"><a href="#Linux简介" class="headerlink" title="Linux简介"></a>Linux简介</h3><p><img src="/2021/12/03/linux-bi-ji/image-20211108231711091.png" alt="image-20211108231711091"></p>
-<p>linux是unix的子分支。mac os是类unix操作系统。</p>
-<p>linux是unix的开源软件。linux可以称为lin ux，是李纳斯独自开发的。</p>
+                <h2 id="linux大介绍"><a href="#linux大介绍" class="headerlink" title="linux大介绍"></a>linux大介绍</h2><h5 id="UNIX主要发行版本"><a href="#UNIX主要发行版本" class="headerlink" title="UNIX主要发行版本"></a>UNIX主要发行版本</h5><table>
+<thead>
+<tr>
+<th align="center">操作系统</th>
+<th align="center">公司</th>
+<th align="center">硬件平台</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">AIX</td>
+<td align="center">IBM</td>
+<td align="center">PowerPC</td>
+</tr>
+<tr>
+<td align="center">HP-UX</td>
+<td align="center">HP</td>
+<td align="center">PA-RISC</td>
+</tr>
+<tr>
+<td align="center">Solaris</td>
+<td align="center">Sun</td>
+<td align="center">SPARC</td>
+</tr>
+<tr>
+<td align="center">Linux</td>
+<td align="center">Red Hat, Ubuntu</td>
+<td align="center">IA(Intel, AMD, Cyrix, RISE)</td>
+</tr>
+</tbody></table>
+<p><a target="_blank" rel="noopener" href="https://www.oracle.com/cn/solaris/solaris11/">Solaris</a>是我们可以学习的unix操作系统，另外两个无法在家用机安装。</p>
+<h5 id="Linux发展历史"><a href="#Linux发展历史" class="headerlink" title="Linux发展历史"></a>Linux发展历史</h5><p>Linux系统诞生于1991年，由芬兰大学生<strong>李纳斯</strong>(Linus Torvalds)和后来陆续加入的众多爱好者共同开发完成</p>
+<h5 id="Linux简介"><a href="#Linux简介" class="headerlink" title="Linux简介"></a>Linux简介</h5><p>linux是unix的子分支，mac os是类unix操作系统</p>
+<p>linux是unix的开源软件。</p>
+<p>linux可以称为lin ux，是李纳斯独自开发的。</p>
 <p>linux企鹅作为图标，是象征着南极，那里不属于任何国家。这也寓意了linux不属于任何公司，任何人都可以获得linux开发的成果。</p>
-<h3 id="Linux内核"><a href="#Linux内核" class="headerlink" title="Linux内核"></a>Linux内核</h3><p><strong>系统的作用</strong>：帮助用户管理计算机硬件</p>
-<p><img src="/2021/12/03/linux-bi-ji/image-20211111164931308.png" alt="image-20211111164931308"></p>
-<p><img src="/2021/12/03/linux-bi-ji/image-20211108232455621.png" alt="image-20211108232455621"></p>
-<p><strong>内核版本说明</strong>：2（主版本）.6（次版本）.18（末版本）</p>
+<h5 id="Linux内核"><a href="#Linux内核" class="headerlink" title="Linux内核"></a>Linux内核</h5><p><strong>系统的作用</strong>：帮助用户管理计算机硬件</p>
+<p><strong>系统内核的作用</strong>：</p>
+<ol>
+<li><p><strong>管理进程</strong>：内核负责创建和销毁进程, 并处理它们与外部世界的联系(输入和输出)，不同进程间通讯(通过信号，管道，或者进程间通讯原语)对整个系统功能来说是基本的，也由内核处理。 另外， 调度器， 控制进程如何共享CPU，是进程管理的一部分。更通常地，内核的进程管理活动实现了多个进程在一个单个或者几个CPU 之上的抽象。</p>
+</li>
+<li><p><strong>管理内存</strong>：计算机的内存是主要的资源， 处理它所用的策略对系统性能是至关重要的。内核为所有进程的每一个都在有限的可用资源上建立了一个虚拟地址空间。内核的不同部分与内存管理子系统通过一套函数调用交互，从简单的malloc&#x2F;free对到更多更复杂的功能。</p>
+</li>
+<li><p><strong>文件系统</strong>：Unix 在很大程度上基于文件系统的概念;几乎Unix中的任何东西都可看作一个文件。内核在非结构化的硬件之上建立了一个结构化的文件系统，结果是文件的抽象非常多地在整个系统中应用。另外，Linux 支持多个文件系统类型，就是说，物理介质上不同的数据组织方式。例如，磁盘可被格式化成标准Linux的ext3文件系统，普遍使用的FAT文件系统，或者其他几个文件系统。</p>
+</li>
+<li><p><strong>设备控制</strong>：几乎每个系统操作终都映射到一个物理设备上，除了处理器，内存和非常少的别的实体之外，全部中的任何设备控制操作都由特定于要寻址的设备相关的代码来进行。这些代码称为设备驱动。内核中必须嵌入系统中出现的每个外设的驱动，从硬盘驱动到键盘和磁带驱动器。内核功能的这个方面是本书中的我们主要感兴趣的地方。</p>
+</li>
+<li><p><strong>网络管理</strong>：网络必须由操作系统来管理，因为大部分网络操作不是特定于某一个进程： 进入系统的报文是异步事件。报文在某一个进程接手之前必须被收集，识别，分发，系统负责在程序和网络接口之间递送数据报文，它必须根据程序的网络活动来控制程序的执行。另外，所有的路由和地址解析问题都在内核中实现。</p>
+</li>
+</ol>
+<p><strong>linux内核在系统中的位置</strong>：</p>
+<p><img src="/2021/12/03/linux-bi-ji/image-20211111164931308-16587302267941.png"></p>
+<p><strong>Linux内核版本介绍</strong>：</p>
+<p><strong>Linux内核官网</strong>：<a target="_blank" rel="noopener" href="https://www.kernel.org/">The Linux Kernel Archives</a></p>
+<p><strong>内核版本说明</strong>：</p>
+<p>2（主版本）.6（次版本）.18（末版本）</p>
 <p>开发版是企业生产的，底层用的还是Linux内核。</p>
-<h4 id="linux的发行版本"><a href="#linux的发行版本" class="headerlink" title="linux的发行版本"></a>linux的发行版本</h4><p><img src="/2021/12/03/linux-bi-ji/image-20211108232848272.png" alt="image-20211108232848272"></p>
+<h5 id="linux的发行版本"><a href="#linux的发行版本" class="headerlink" title="linux的发行版本"></a>linux的发行版本</h5><p><img src="/2021/12/03/linux-bi-ji/image-20211108232848272-16587302267942.png"></p>
 <p>左为<code>redhat</code>系列，右为<code>debian</code>系列。</p>
 <p>主要区别是软件安装方式，类型。</p>
-<h3 id="Linux上的开源软件"><a href="#Linux上的开源软件" class="headerlink" title="Linux上的开源软件"></a>Linux上的开源软件</h3><p><img src="/2021/12/03/linux-bi-ji/image-20211108234100381.png" alt="image-20211108234100381"></p>
+<h5 id="Linux上的开源软件"><a href="#Linux上的开源软件" class="headerlink" title="Linux上的开源软件"></a>Linux上的开源软件</h5><p><img src="/2021/12/03/linux-bi-ji/image-20211108234100381-16587302267945.png"></p>
 <p>开源软件的<strong>分类</strong>：</p>
 <ol>
 <li>使用自由</li>
@@ -521,60 +588,273 @@ linux是unix的开源软件。linux可以称为l">
 <li>散布以及改良自由</li>
 </ol>
 <p>linux里有更多的服务器软件，更适合当服务器系统，同时因为代码是开放的，更具安全性。</p>
-<p>windows服务器版全补丁安全等级为c1，linux不做防护为c1，打补丁为b级。</p>
-<h3 id="支撑互联网的开源技术"><a href="#支撑互联网的开源技术" class="headerlink" title="支撑互联网的开源技术"></a>支撑互联网的开源技术</h3><p><img src="/2021/12/03/linux-bi-ji/image-20211108235440156.png" alt="image-20211108235440156"></p>
-<h3 id="linux应用领域"><a href="#linux应用领域" class="headerlink" title="linux应用领域"></a>linux应用领域</h3><p>腾讯，阿里，微软服务器</p>
-<p>window是面向个人用户，服务器端已经走下坡路了</p>
-<p>安卓底层也是linux，属于linux嵌入应用</p>
-<p>电影等</p>
-<h3 id="linux选择命令行的原因"><a href="#linux选择命令行的原因" class="headerlink" title="linux选择命令行的原因"></a>linux选择命令行的原因</h3><ol>
+<h5 id="Linux和Windows的安全性比较"><a href="#Linux和Windows的安全性比较" class="headerlink" title="Linux和Windows的安全性比较"></a>Linux和Windows的安全性比较</h5><p>windows服务器版全补丁安全等级为c1，linux不做防护为c1，打补丁为b级。</p>
+<p><strong>原因</strong>：window是面向个人用户，服务器端已经走下坡路了</p>
+<h5 id="支撑互联网的开源技术"><a href="#支撑互联网的开源技术" class="headerlink" title="支撑互联网的开源技术"></a>支撑互联网的开源技术</h5><p><strong>LAMP</strong>：</p>
+<p>Linux 操作系统<br>Apache Web服务器<br>MySQL 数据库<br>PHP 编程语言</p>
+<p><strong>LMNP</strong>：</p>
+<p>Linux 操作系统<br>nginx Web服务器<br>MySQL 数据库<br>PHP 编程语言</p>
+<h5 id="Linux应用领域"><a href="#Linux应用领域" class="headerlink" title="Linux应用领域"></a>Linux应用领域</h5><p><strong>网站服务器</strong>：腾讯，阿里，微软服务器</p>
+<p><strong>嵌入式开发</strong>：安卓底层也是Linux，属于Linux嵌入应用</p>
+<p><strong>电影工业</strong>：拍摄电影的数据处理等</p>
+<h5 id="linux选择命令行的原因"><a href="#linux选择命令行的原因" class="headerlink" title="linux选择命令行的原因"></a>linux选择命令行的原因</h5><ol>
 <li>图形界面占用系统资源</li>
 <li>降低稳定性</li>
 <li>符合远程维护需求</li>
 </ol>
-<h2 id="linux学习"><a href="#linux学习" class="headerlink" title="linux学习"></a>linux学习</h2><h3 id="安装VMware"><a href="#安装VMware" class="headerlink" title="安装VMware"></a>安装VMware</h3><h3 id="系统分区简介"><a href="#系统分区简介" class="headerlink" title="系统分区简介"></a>系统分区简介</h3><p>作用：便于文件获取和寻找</p>
-<p>原理：把大硬盘分为小的逻辑分区</p>
-<p><img src="/2021/12/03/linux-bi-ji/image-20211110153742707.png" alt="image-20211110153742707"></p>
+<h2 id="linux学习"><a href="#linux学习" class="headerlink" title="linux学习"></a>linux学习</h2><h3 id="安装VMware"><a href="#安装VMware" class="headerlink" title="安装VMware"></a>安装VMware</h3><p><strong>下载</strong>：<a target="_blank" rel="noopener" href="https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation.html">Workstation 16 Pro for Windows</a></p>
+<p><strong>注意</strong>：激活密钥自行搜索</p>
+<h3 id="系统分区简介"><a href="#系统分区简介" class="headerlink" title="系统分区简介"></a>系统分区简介</h3><p><strong>作用</strong>：便于文件获取和寻找</p>
+<p><strong>原理</strong>：把大硬盘分为小的逻辑分区</p>
+<p><img src="/2021/12/03/linux-bi-ji/image-20211110153742707-16587302267943.png"></p>
 <p>能写入数据的只有<strong>主分区</strong>和<strong>逻辑分区</strong></p>
 <p><strong>主分区</strong>只能存在4个</p>
 <p><strong>格式化</strong>是一种让数据可以被系统识别的手段，分成一个个数据块，可以想象成柜子的打格</p>
 <p><strong>硬件设备文件名</strong>：（linux要分配设备文件名才能使用）</p>
-<p><img src="/2021/12/03/linux-bi-ji/image-20211110154541801.png" alt="image-20211110154541801"></p>
+<p><img src="/2021/12/03/linux-bi-ji/image-20211110154541801-16587302267944.png"></p>
 <p>dev是硬件目录，在根目录下</p>
-<p><img src="/2021/12/03/linux-bi-ji/image-20211110155534645.png" alt="image-20211110155534645"></p>
+<p><img src="/2021/12/03/linux-bi-ji/image-20211110155534645-16587302267947.png"></p>
 <p>linux称分区分配盘符的过程为<strong>挂载</strong>，盘符称为<strong>挂载点</strong></p>
 <p><strong>swap分区</strong>可以理解为虚拟内存</p>
 <p><strong>boot分区</strong>为启动分区，可以单独分开，防止根写满无法启动</p>
 <p><strong>文件系统结构：</strong></p>
-<p><img src="/2021/12/03/linux-bi-ji/image-20211110160135997.png" alt="image-20211110160135997"></p>
+<p><img src="/2021/12/03/linux-bi-ji/image-20211110160135997-16587302267946.png"></p>
 <p>linux分区的每个目录都是<strong>根目录</strong>的<strong>子目录</strong>，可以拥有单独的磁盘空间</p>
-<h3 id="Centos7系统安装"><a href="#Centos7系统安装" class="headerlink" title="Centos7系统安装"></a>Centos7系统安装</h3><p> VMware按F2进入BIOS</p>
+<h3 id="Centos7系统安装"><a href="#Centos7系统安装" class="headerlink" title="Centos7系统安装"></a>Centos7系统安装</h3><p> VMware按<code>F2</code>进入BIOS</p>
 <p>全屏快捷键<code>ctrl</code>+<code>alt</code>+回车</p>
-<h4 id="密码原则"><a href="#密码原则" class="headerlink" title="密码原则"></a>密码原则</h4><p>复杂性（包含大小写字符）</p>
-<p>易记性（选择一些对你有意义的话）</p>
-<p>时效性（经常更改）</p>
-<h4 id="基本分区结构"><a href="#基本分区结构" class="headerlink" title="基本分区结构"></a>基本分区结构</h4><p><img src="/2021/12/03/linux-bi-ji/image-20211110163009970.png" alt="image-20211110163009970"></p>
-<h4 id="软件包选择"><a href="#软件包选择" class="headerlink" title="软件包选择"></a>软件包选择</h4><p><img src="/2021/12/03/linux-bi-ji/image-20211110163159843.png" alt="image-20211110163159843"></p>
-<h4 id="安装日志"><a href="#安装日志" class="headerlink" title="安装日志"></a>安装日志</h4><p><img src="/2021/12/03/linux-bi-ji/image-20211110164624721.png" alt="image-20211110164624721"></p>
+<h4 id="密码原则"><a href="#密码原则" class="headerlink" title="密码原则"></a>密码原则</h4><ol>
+<li><p>复杂性（包含大小写字符）</p>
+</li>
+<li><p>易记性（选择一些对你有意义的话）</p>
+</li>
+<li><p>时效性（经常更改）</p>
+</li>
+</ol>
+<h4 id="基本分区结构"><a href="#基本分区结构" class="headerlink" title="基本分区结构"></a>基本分区结构</h4><p><img src="/2021/12/03/linux-bi-ji/image-20211110163009970-16587302267948.png"></p>
+<h4 id="软件包选择"><a href="#软件包选择" class="headerlink" title="软件包选择"></a>软件包选择</h4><ol>
+<li>Desktop (桌面)</li>
+<li>Minimal Desktop (最小化桌面)</li>
+<li>Minimal ( 最小化)</li>
+<li>Basic Server (基本服务器)</li>
+<li>DatabaseServer(数据库服务器)</li>
+<li>Web Server (网页服务器)</li>
+<li>Virtual Host (虚拟主机)</li>
+<li>software development workstation (软件开发工作站)</li>
+</ol>
+<h4 id="安装日志"><a href="#安装日志" class="headerlink" title="安装日志"></a>安装日志</h4><ol>
+<li>&#x2F;rootinstall.log:存储了安装在系统中的<br>软件包及其版本信息</li>
+<li>&#x2F;root&#x2F;install.log.syslog:存储了安装过程中<br>留下的事件记录</li>
+<li>&#x2F;rootanaconda-ks.cfg:以Kickstart配置文<br>件的格式记录安装过程中设置的选项信息</li>
+</ol>
 <p><strong>kickstart配置文件</strong>记录了<strong>无人值守</strong>安装的过程，这相当于复制了一台已经装好的linux服务器</p>
-<h3 id="远程登录管理工具"><a href="#远程登录管理工具" class="headerlink" title="远程登录管理工具"></a>远程登录管理工具</h3><h4 id="VMware网络配置"><a href="#VMware网络配置" class="headerlink" title="VMware网络配置"></a>VMware网络配置</h4><p>在VMware找到<strong>编辑</strong>选项，进入<strong>虚拟网络编辑器</strong>，点击<strong>更改设置</strong>即可调整</p>
-<p><img src="/2021/12/03/linux-bi-ji/image-20211110200809771.png" alt="image-20211110200809771"></p>
-<p><strong>桥接</strong>：利用真实网卡，可以直接和真实机通信，但是要占用ip</p>
-<p>桥接设置的ip要和真机网段相同</p>
-<p><strong>net和host-only区别</strong>：net能访问互联网，host-only只能和本机通信</p>
+<h3 id="远程登录管理工具"><a href="#远程登录管理工具" class="headerlink" title="远程登录管理工具"></a>远程登录管理工具</h3><h4 id="设置centos网卡"><a href="#设置centos网卡" class="headerlink" title="设置centos网卡"></a>设置centos网卡</h4><h5 id="配置静态网络"><a href="#配置静态网络" class="headerlink" title="配置静态网络"></a>配置静态网络</h5><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">cd &#x2F;etc&#x2F;sysconfig&#x2F;network-scripts
+# 如果改错了就无法连接xshell，所以先备份一下
+cp ifcfg-ens33 ifcfg-ens33.bak
+vim ifcfg-ens33<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">#网卡配置表
+TYPE&#x3D;&quot;Ethernet&quot;			#网卡类型：以太网
+PROXY_METHOD&#x3D;&quot;none&quot;		#代理方式：无
+BROWSER_ONLY&#x3D;&quot;no&quot;		#只是支持浏览器：否
+BOOTPROTO&#x3D;&quot;dhcp&quot;		#网卡协议：DHCP
+DEFROUTE&#x3D;&quot;yes&quot;			#默认路由：是
+IPV4_FAILURE_FATAL&#x3D;&quot;no&quot;	#是否开启IPV4致命错误检测：否
+IPV6INIT&#x3D;&quot;yes&quot;			#IPV6是否自动初始化：是
+IPV6_AUTOCONF&#x3D;&quot;yes&quot;		#IPV6是否自动配置:是
+IPV6_DEFROUTE&#x3D;&quot;yes&quot;		#IPV6默认路由：是
+IPV6_FAILURE_FATAL&#x3D;&quot;no&quot;	#是否开启IPV6致命错误检测：否
+IPV6_ADDR_GEN_MODE&#x3D;&quot;stable-privacy&quot; #IPV6地址生成模型
+NAME&#x3D;&quot;ens33&quot;			#网卡名字(与DEVICE- 致)
+UUID&#x3D;&quot;2f9f23c3-d3cf-40fd-8987-4cb1ddaa6e38&quot; #唯一标识码
+DEVICE&#x3D;&quot;ens33&quot;			#网卡设备
+ONBOOT&#x3D;&quot;yes&quot;			#是否激活网卡<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><strong>改为如下字段</strong>：</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">TYPE&#x3D;&quot;Ethernet&quot;
+PROXY_METHOD&#x3D;&quot;none&quot;
+BROWSER_ONLY&#x3D;&quot;no&quot;
+BOOTPROTO&#x3D;&quot;static&quot;
+IPADDR&#x3D;192.168.245.135	#写自己网段的静态地址，vmware可以在虚拟网络管理器看nat模式
+GATEYWAY&#x3D;192.168.245.2 #写自己网关的静态地址，在NAT设置查看
+DEFROUTE&#x3D;&quot;yes&quot;
+IPV4_FAILURE_FATAL&#x3D;&quot;no&quot;	
+IPV6INIT&#x3D;&quot;yes&quot;			
+IPV6_AUTOCONF&#x3D;&quot;yes&quot;		
+IPV6_DEFROUTE&#x3D;&quot;yes&quot;		
+IPV6_FAILURE_FATAL&#x3D;&quot;no&quot;	
+IPV6_ADDR_GEN_MODE&#x3D;&quot;stable-privacy&quot; 
+NAME&#x3D;&quot;ens33&quot;
+UUID&#x3D;&quot;2f9f23c3-d3cf-40fd-8987-4cb1ddaa6e38&quot;
+DEVICE&#x3D;&quot;ens33&quot;
+ONBOOT&#x3D;&quot;yes&quot;
+:wq #保存<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">systemctl restart network #重启网络<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h5 id="配置主机名"><a href="#配置主机名" class="headerlink" title="配置主机名"></a>配置主机名</h5><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">hostname (主机名)  #临时性命令，重启失效
+
+# 永久更改主机名
+vi &#x2F;etc&#x2F;hostname
+dongruan1<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h5 id="配置防火墙"><a href="#配置防火墙" class="headerlink" title="配置防火墙"></a>配置防火墙</h5><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">systemctl status firewalld	# 查看防火墙状态
+systemctl stop firewalld 	# 配置停止防火墙
+systemctl disable firewalld # 配置防火墙停止重启自动开启
+systemctl status firewalld	# 查看防火墙是否关闭
+
+firewall-cmd --zone&#x3D;public --add-port&#x3D;80&#x2F;tcp --permanent #防火墙放行80端口
+# 配置系统服务时使用 system 服务名 操作
+# 服务名: firewall 
+# 操作: enable disable start stop restart<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h5 id="配置安全策略-SELinux"><a href="#配置安全策略-SELinux" class="headerlink" title="配置安全策略(SELinux)"></a>配置安全策略(SELinux)</h5><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">getenforce		# 查看安全策略
+setenforce 0 	# 临时关闭SElinux
+getenforce		# 查看安全策略是否关闭
+
+# 永久关闭SElinux
+vim &#x2F;etc&#x2F;selinux&#x2F;config
+
+SELINUX&#x3D; disabled<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><strong>注意</strong>：</p>
+<ol>
+<li><p>永久关闭SElinux需要重启主机生效。</p>
+</li>
+<li><p>如果主机是生产环境不能重启，但又要实现永久关闭SElinux：</p>
+<ol>
+<li>先做临时关闭</li>
+<li>修改其配置文件实现永久关闭，但不需要重启主机</li>
+</ol>
+</li>
+</ol>
+<h5 id="配置DNS"><a href="#配置DNS" class="headerlink" title="配置DNS"></a>配置DNS</h5><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">vim &#x2F;etc&#x2F;resolv.conf<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p><strong>写入以下内容</strong>：</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">nameserver 8.8.8.8 # dns地址
+search localdomain # 搜索网关<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+
+
+<h4 id="VMware网络配置"><a href="#VMware网络配置" class="headerlink" title="VMware网络配置"></a>VMware网络配置</h4><p>在VMware找到<strong>编辑</strong>选项，进入<strong>虚拟网络编辑器</strong>，点击<strong>更改设置</strong>即可调整</p>
+<p><img src="/2021/12/03/linux-bi-ji/image-20211110200809771-16587302267949.png"></p>
+<p><strong>桥接</strong>：利用真实网卡，可以直接和真机通信，但是要占用IP地址。</p>
+<p>桥接设置的IP要和真机网段相同</p>
+<p><strong>net</strong>：net能访问互联网，相当于VMware做了一个<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/nat/320024?fr=aladdin">net</a>(网络地址转换)</p>
+<p><strong>host-only</strong>：host-only只能和本机通信</p>
 <pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">sudo su            #获取root权限
 ifconfig           #检查ip
 ifconfig ens33 192.168.110.2 #(设置一个ip) 
 #centos7会给没有设置网卡名称的自动设置，例如br0
 #在ifconfig中检查192网段的地址，就是这台linux的地址<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p><img src="/2021/12/03/linux-bi-ji/image-20211111172025297.png" alt="image-20211111172025297"></p>
-<h4 id="使用ssh远程工具连接linux"><a href="#使用ssh远程工具连接linux" class="headerlink" title="使用ssh远程工具连接linux"></a>使用ssh远程工具连接linux</h4><p>找到ens33的inet写入即可连接</p>
-<p>常见的连接工具有<code>xshell</code>和<code>finalshell</code></p>
-<h4 id="关于shell"><a href="#关于shell" class="headerlink" title="关于shell"></a>关于shell</h4><p>什么是<code>shell</code>（壳）？</p>
-<p><code>shell</code>是系统的用户界面，图形界面称<code>GUI</code>，字符界面称<code>CLI</code></p>
+<p><img src="/2021/12/03/linux-bi-ji/image-20211111172025297-165873022679410.png"></p>
+<h4 id="使用ssh远程工具连接linux"><a href="#使用ssh远程工具连接linux" class="headerlink" title="使用ssh远程工具连接linux"></a>使用ssh远程工具连接linux</h4><p>找到ens33网卡的IP写入即可连接</p>
+<p><strong>常见的连接工具有</strong>：<a target="_blank" rel="noopener" href="https://www.xshell.com/zh/xshell/">xshell</a>，<a target="_blank" rel="noopener" href="https://www.hostbuf.com/">finalshell</a>，<a target="_blank" rel="noopener" href="https://mobaxterm.mobatek.net/">mobaxterm</a></p>
+<p>**什么是shell(壳)**：</p>
+<p><code>shell</code>是系统的用户界面</p>
+<p><strong>什么是GUI</strong>：</p>
+<p>图形界面称<code>GUI</code>，字符界面称<code>CLI</code></p>
 <p><code>windows</code>的<code>GUI</code>是资源管理器称</p>
 <p><code>linux</code>的<code>GUI</code>是<code>GNOME</code>和<code>KDE</code>，统称<code>X window</code></p>
+<h3 id="换源"><a href="#换源" class="headerlink" title="换源"></a>换源</h3><h4 id="Ubuntu"><a href="#Ubuntu" class="headerlink" title="Ubuntu"></a>Ubuntu</h4><ol>
+<li>获取Ubuntu版本</li>
+</ol>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">lsb_release -a<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<ol start="2">
+<li>备份源</li>
+</ol>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">sudo cp &#x2F;etc&#x2F;apt&#x2F;sources.list &#x2F;etc&#x2F;apt&#x2F;sources.list.bcakup<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<ol start="3">
+<li>使用vi修改源</li>
+</ol>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">sudo vi &#x2F;etc&#x2F;apt&#x2F;sources.list<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<ol start="4">
+<li>更新源</li>
+</ol>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">sudo apt-get update &amp;&amp; apt-get upgrade -y<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h4 id="CentOS"><a href="#CentOS" class="headerlink" title="CentOS"></a>CentOS</h4><h5 id="设置yum源指向本地"><a href="#设置yum源指向本地" class="headerlink" title="设置yum源指向本地"></a>设置yum源指向本地</h5><p><strong>介绍</strong>：</p>
+<ol>
+<li><p><strong>RedHat系列</strong>系统安装包时使用rpm安装rpm包需要安装依赖，yum会检测依赖并自动化安装</p>
+</li>
+<li><p><strong>Debian系列</strong>系统安装包时使用deb安装deb包需要安装依赖，apt-get会检测依赖并自动化安装</p>
+</li>
+<li><p>挂载镜像</p>
+</li>
+</ol>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"># 临时挂载
+ll &#x2F;mnt	# 再查看挂载区
+mount &#x2F;dev&#x2F;sr0 &#x2F;mnt #挂载命令是临时性的
+ll &#x2F;mnt # 再查看挂载的是不是镜像的内容
+df -h	# 查看硬件
+
+# 永久挂载
+vi etc&#x2F;fstab<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>插入dev&#x2F;sr0</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">&#x2F;dev&#x2F;mapper&#x2F;centos-root &#x2F;                       xfs     defaults        0 0
+UUID&#x3D;1bfb16ea-82d5-4db2-99b2-4800722dbf9a &#x2F;boot                   xfs     defaults        0 0
+&#x2F;dev&#x2F;mapper&#x2F;centos-swap swap                    swap    defaults        0 
+&#x2F;dev&#x2F;sr0				&#x2F;mnt					iso9660 defaults        0 0<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><strong>注意</strong>：格式不能写错，否则无法开机。需要重新在启动界面输入root密码，在命令行更改：</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">vi etc&#x2F;fatab 	#修改
+ll &#x2F;mnt 		#查看是否挂载<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<ol start="2">
+<li>尝试使用rpm安装</li>
+</ol>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">cd &#x2F;mnt&#x2F;Packages
+ls
+rpm -ivh vim-common-7.4.160-2.el7.x86_64.rpm # 这时会要求安装依赖<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<ol start="3">
+<li>使用yum安装</li>
+</ol>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">cd &#x2F;etc&#x2F;yum.repos.d&#x2F;
+ls # 此时显示的是yum源的配置存放地，这些配置全都指向官网
+
+# 现在弄一个本地的
+# 先备份
+mkdir bak 	#创建bak
+mv * bak 	#把当前的文件移动到bak
+vi local.repo # 创建local.repo文件<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><strong>创建repo</strong>:</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">[dongruan]
+name&#x3D;this is a local.repo 	#简介
+baseurl&#x3D;file:&#x2F;&#x2F;mnt			#定义仓库路径
+enabled&#x3D;1					#开启仓库
+gpgcheck&#x3D;0					#关闭密钥
+:wq<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><strong>使用创建好的本地repo安装vim</strong>:</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">yum list		#查看仓库软件
+yum repolist	#查看有多少个软件包
+yum install vim #yum调用仓库安装vim,解决依赖关系<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<h5 id="设置yum源指向阿里"><a href="#设置yum源指向阿里" class="headerlink" title="设置yum源指向阿里"></a>设置yum源指向阿里</h5><p><strong>设网络置源时尽量去官网找链接</strong>：<a target="_blank" rel="noopener" href="https://developer.aliyun.com/mirror/">阿里镜像站</a></p>
+<p><strong>这里说一下大概的步骤</strong>：</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"># 备份
+mv &#x2F;etc&#x2F;yum.repos.d&#x2F;CentOS-Base.repo &#x2F;etc&#x2F;yum.repos.d&#x2F;CentOS-Base.repo.backup #给你的镜像源换个名字
+
+# 下载新的 CentOS-Base.repo 到 &#x2F;etc&#x2F;yum.repos.d&#x2F;
+wget -O &#x2F;etc&#x2F;yum.repos.d&#x2F;CentOS-Base.repo https:&#x2F;&#x2F;mirrors.aliyun.com&#x2F;repo&#x2F;Centos-vault-8.5.2111.repo
+
+# 更新缓存
+yum clean all #清理源缓存
+yum makecache #创建新缓存
+
+# 更新yum
+yum update -y<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+
+
 <h3 id="linux命令格式"><a href="#linux命令格式" class="headerlink" title="linux命令格式"></a>linux命令格式</h3><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">#命令名[选项][参数]
 #命令名是描述命令功能的英文单词的缩写
 #选项是选择命令的功能，通常以‘-’开头。当有多个选项时可以只写一个‘-’，如：‘ls -l -a’与ls -la相同。另外部分选项以‘--’开头，如‘ls --help’
@@ -586,26 +866,43 @@ ifconfig ens33 192.168.110.2 #(设置一个ip)
 <li>尽量避免与用户交互</li>
 <li>使用纯文本文件保存信息</li>
 </ol>
-<h2 id="linux命令、通配符、技巧"><a href="#linux命令、通配符、技巧" class="headerlink" title="linux命令、通配符、技巧"></a>linux命令、通配符、技巧</h2><p>所有命令都可以在后面添加–help来查看命令功能</p>
-<h3 id="文件目录操作命令"><a href="#文件目录操作命令" class="headerlink" title="文件目录操作命令"></a>文件目录操作命令</h3><h4 id="ls命令"><a href="#ls命令" class="headerlink" title="ls命令"></a>ls命令</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">ls -l &#x2F;***  #文件查看命令
+<h3 id="基本界面"><a href="#基本界面" class="headerlink" title="基本界面"></a>基本界面</h3><p><img src="/2021/12/03/linux-bi-ji/image-20220628185501707-165873022679511.png"></p>
+<p><strong>root</strong>：用户名称</p>
+<p><strong>localhost</strong>：主机名称</p>
+<p>**~**：家目录</p>
+<h3 id="基本操作"><a href="#基本操作" class="headerlink" title="基本操作"></a>基本操作</h3><h4 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">#使用tab键自动补全
+#使用ctrl+c键强制终止
+#使用ctrl+l键清屏，与clear相同
+#使用ctrl+u清除光标前面的内容
+#使用ctrl+l清除光标后面的内容
+#使用↑键列出上一条命令<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h2 id="linux命令、通配符、技巧"><a href="#linux命令、通配符、技巧" class="headerlink" title="linux命令、通配符、技巧"></a>linux命令、通配符、技巧</h2><p>所有命令都可以在后面添加<code>--help</code>来查看命令功能</p>
+<h4 id="查看IP命令"><a href="#查看IP命令" class="headerlink" title="查看IP命令"></a>查看IP命令</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">ifconfig
+ip address<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h3 id="文件目录操作命令"><a href="#文件目录操作命令" class="headerlink" title="文件目录操作命令"></a>文件目录操作命令</h3><h4 id="查看磁盘占用"><a href="#查看磁盘占用" class="headerlink" title="查看磁盘占用"></a>查看磁盘占用</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">df -h<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p><img src="/2021/12/03/linux-bi-ji/image-20220629203944831-165873022679512.png"></p>
+<p><strong>tmpfs</strong>：内核文件</p>
+<h4 id="文件查看命令"><a href="#文件查看命令" class="headerlink" title="文件查看命令"></a>文件查看命令</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">ls -l &#x2F;*** &#x3D; ll #文件查看命令
 -l #显示详细信息
 -a #显示隐藏信息
 -d #显示文件属性
 -h #人性化显示文件大小<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p><strong>内容的含义：</strong></p>
+<p><strong>ls内容</strong>：蓝色代表目录，无色代表文件</p>
+<p><strong>详细内容的含义：</strong></p>
+<p><img src="/2021/12/03/linux-bi-ji/image-20220628191339881-165873022679513.png"></p>
 <p><strong>第一组，首字符意思：</strong></p>
 <ol>
-<li><p>‘-’代表普通文件</p>
-</li>
-<li><p>‘d‘代表目录</p>
-</li>
-<li><p>’l’代表链接（快捷方式）</p>
-</li>
-<li><p>‘c’代表字符设备（键盘鼠标）</p>
-</li>
-<li><p>‘b‘代表块设备（硬盘）</p>
-</li>
+<li><code>-</code>代表普通文件</li>
+<li><code>d</code>代表目录</li>
+<li><code>l</code>代表链接（快捷方式）</li>
+<li><code>c</code>代表字符设备（键盘鼠标）</li>
+<li><code>b</code>代表块设备（硬盘）</li>
 </ol>
 <p><strong>第二组：</strong>被硬链接的次数，文件默认为1，目录默认为2</p>
 <p><strong>第三组：</strong>文件所有者</p>
@@ -613,27 +910,29 @@ ifconfig ens33 192.168.110.2 #(设置一个ip)
 <p><strong>第五组</strong>：文件的大小，只显示目录大小</p>
 <p><strong>第六组：</strong>修改时间</p>
 <p><strong>第七组：</strong>文件名</p>
-<h4 id="touch、mkdir、rm命令"><a href="#touch、mkdir、rm命令" class="headerlink" title="touch、mkdir、rm命令"></a>touch、mkdir、rm命令</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">touch a #创建一个空白文件
+<h4 id="创建文件"><a href="#创建文件" class="headerlink" title="创建文件"></a>创建文件</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">touch a #创建一个空白文件
+touch a b c #一次性创建多个文件
+touch a&#123;1..100&#125;.txt #创建a1-a100的文件
 
 mkdir text #创建一个空目录（make dictory)
 mkdir -p x&#x2F;y&#x2F;z #一次性创建多级目录
 mkdir a b c #一次性创建多个目录
-
 rmdir a #删除空目录(remove dictory)
 
 rm a #删除文件(remove)
 rm -f #强制删除文件，无需确认(force)
 rm -r #删除目录
-rm -rf #强制删除目录<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+rm -rf #强制删除目录<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h4 id="cp和mv命令"><a href="#cp和mv命令" class="headerlink" title="cp和mv命令"></a>cp和mv命令</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">cp 源文件 目标文件 #复制文件(copy)
+<h4 id="复制，移动文件"><a href="#复制，移动文件" class="headerlink" title="复制，移动文件"></a>复制，移动文件</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">cp 源文件 目标文件 #复制文件(copy)
 cp &#x2F;etc&#x2F;fstab &#x2F;tmp #复制文件不改名
 cp &#x2F;etc&#x2F;fstab &#x2F;tmp&#x2F;hi.txt #复制文件改名成hi.txt
-cp -r &#x2F;home &#x2F;tmp&#x2F;test&#x2F; #把home目录复制到指定目录
+cp -r &#x2F;home &#x2F;tmp&#x2F;test&#x2F; #把home目录复制到指定目录，不使用-r（递归）会掠过
 cp -p #保持使用权限不变
-mv 源文件名 更改后的文件名 #更改文件名<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h4 id="通配符"><a href="#通配符" class="headerlink" title="通配符"></a>通配符</h4><p><code>*</code>可以匹配<strong>任意数量</strong>的<strong>任意字符</strong>,例如：</p>
+mv 源文件名 更改后的文件名 #更改文件名，移动目录不需要参数<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="通配符"><a href="#通配符" class="headerlink" title="通配符"></a>通配符</h3><p><code>*</code>可以匹配<strong>任意数量</strong>的<strong>任意字符</strong>,例如：</p>
 <pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">ls -d &#x2F;etc&#x2F;pa* #表示找etc下所有以pa开头的文件
 #path path1 path-2 等<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
@@ -674,27 +973,37 @@ touch &#x2F;tmp&#x2F;&#123;a,b,c&#125;.txt
 <li><p>查询命令的历史记录，输入<code>history</code>即可</p>
 </li>
 </ol>
-<h3 id="文件内容操作命令"><a href="#文件内容操作命令" class="headerlink" title="文件内容操作命令"></a>文件内容操作命令</h3><h4 id="cat、more、less、head、tail命令"><a href="#cat、more、less、head、tail命令" class="headerlink" title="cat、more、less、head、tail命令"></a>cat、more、less、head、tail命令</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">cat #查看文件内容,链接多个文件内容（concarebate），只能查看文本信息，不能查看可执行文件
+<h3 id="文件内容操作命令"><a href="#文件内容操作命令" class="headerlink" title="文件内容操作命令"></a>文件内容操作命令</h3><h4 id="查看文件内容"><a href="#查看文件内容" class="headerlink" title="查看文件内容"></a>查看文件内容</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">cat #查看文件内容,链接多个文件内容（concarebate），只能查看文本信息，不能查看可执行文件
 cat &#x2F;etc&#x2F;sudoers #显示sudoers的纯文本信息
 cat &#x2F;etc&#x2F;redhat-release #查看文件系统版本
 uname -a #可以查看系统信息，例如kernel内核版本
 cat -n #显示文本添加行号
-more #分页显示满屏暂停，空格翻页，回车加行，不能往上看
-less #不会自动退出，按q退出
+cat 文件名 |grep 关键字 #查看文件内容并筛选出关键词
+#管道(|)：获取上一个命令的结果作为下一个命令的输入
+
+more #查看文件内容，分页显示满屏暂停，空格翻页，回车加行，不能往上看
+
+less #查看文件内容，不会自动退出，按q退出
+
 head #查看文件的前10行
 head -3 #查看文件的前3行
-tail #查看文件最后10行
-tail -f #实时查看文件新增内容
-tail -f &#x2F;var&#x2F;log&#x2F;messages #查看实时日志信息<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h4 id="wc、echo命令"><a href="#wc、echo命令" class="headerlink" title="wc、echo命令"></a>wc、echo命令</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">wc #统计行数、单词数、字节数（word count）
+tail #查看文件最后10行
+tail -f #实时查看文件新增内容，排错专用
+tail -f &#x2F;var&#x2F;log&#x2F;messages #动态查看实时日志信息<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="统计，输出内容"><a href="#统计，输出内容" class="headerlink" title="统计，输出内容"></a>统计，输出内容</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">wc #统计行数、单词数、字节数（word count）
 wc -l #统计行数
+
+echo #意思为显示
 echo #输出内容
 echo &#39;hello world!&#39; #输出hello world!在屏幕
-echo &#39;hello world!&#39; &gt; a.txt #把hello world!重定向输出至a.txt
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+echo &#39;hello world!&#39; &gt; a.txt #把hello world!覆盖重定向输出至a.txt，没有该文件则创建该文件
+#覆盖重定向(&gt;): 把前面的内容覆盖到后面的内容
+#追加重定向(&gt;&gt;):把前面的内容追加到后面的内容
+#未终止符(\): 不结束输入，直到用户自己结束<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h4 id="grep命令"><a href="#grep命令" class="headerlink" title="grep命令"></a>grep命令</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">grep &quot;root&quot; &#x2F;etc&#x2F;password #查找possword文件里包含root的内容
+<h4 id="查找文件内容"><a href="#查找文件内容" class="headerlink" title="查找文件内容"></a>查找文件内容</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">grep &quot;root&quot; &#x2F;etc&#x2F;password #查找possword文件里包含root的内容
 grep -n &quot;root&quot; &#x2F;etc&#x2F;password #显示行号
 grep -v &quot;root&quot; &#x2F;etc&#x2F;password #显示不包含root的内容
 grep -v &quot;^$&quot; &#x2F;etc&#x2F;fstab #查看文件不是空白行的内容
@@ -703,16 +1012,31 @@ grep -r &#39;pass&#39; #递归查找当前目录下所有包含pass的文件
 grep &quot;^root&quot; &#x2F;etc&#x2F;password #找possword文件里开头为root的内容
 grep &quot;root$&quot; &#x2F;etc&#x2F;password #找possword文件里结尾为root的内容<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>grep命令只支持正则表达式（不支持通配符）：</p>
-<p>‘^’+word 以word开头</p>
-<p>word+’$’ 以word结尾</p>
-<p>grep默认区分大小写</p>
-<h4 id="diff命令"><a href="#diff命令" class="headerlink" title="diff命令"></a>diff命令</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">diff 文件1 文件2 #比较文件文本的不同(different)
+<p><strong>grep命令只支持正则表达式（不支持通配符）</strong>：</p>
+<p><strong>以word开头</strong>：<code>^</code>+word</p>
+<p><strong>以word结尾</strong>：word+<code>$</code></p>
+<p><strong>默认区分大小写</strong>：grep</p>
+<h4 id="比较文件内容"><a href="#比较文件内容" class="headerlink" title="比较文件内容"></a>比较文件内容</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">diff 文件1 文件2 #比较文件文本的不同(different)
 cp .bashrc .bashrc.bak #复制启动项文件
 diff .bashrc .bashrc.bak #每次开机检查启动项是否被修改<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
-<p>显示结果中，a，d，c分别代表增加、删除、修改。’&lt;’属于前面的文件，’&gt;’属于后面的文件。</p>
-<h3 id="日期和时间相关命令"><a href="#日期和时间相关命令" class="headerlink" title="日期和时间相关命令"></a>日期和时间相关命令</h3><h4 id="date、hwclock、cal命令"><a href="#date、hwclock、cal命令" class="headerlink" title="date、hwclock、cal命令"></a>date、hwclock、cal命令</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">date +%F #查询年月日格式
+<p><strong>显示结果中</strong>：a，d，c分别代表增加、删除、修改</p>
+<p><code>&lt;</code>属于前面的文件，<code>&gt;</code>属于后面的文件</p>
+<h4 id="写入文件内容"><a href="#写入文件内容" class="headerlink" title="写入文件内容"></a>写入文件内容</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">#把内容导入到a.txt
+cat &gt; a.txt &lt;&lt; eof #这里的eof是结束标志，对应下面输入eof结束
+123
+abc
+709
+eof #输入eof结束
+
+echo &quot;\
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+
+
+<h3 id="日期和时间相关命令"><a href="#日期和时间相关命令" class="headerlink" title="日期和时间相关命令"></a>日期和时间相关命令</h3><h4 id="查询年月日"><a href="#查询年月日" class="headerlink" title="查询年月日"></a>查询年月日</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">date +%F #查询年月日格式
 date --help #帮助里有很多格式
 cp &#x2F;etc&#x2F;passwd &#x2F;tmp&#x2F;passwd.bak.$(date +%F)#备份passwd文件并加上.日期
 
@@ -721,14 +1045,14 @@ hwclock #查询CMOS(BIOS)硬件时钟
 cal 2021 #显示2021的日历
 cal 1 2021 #显示2021年一月的日历<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h4 id="stat命令"><a href="#stat命令" class="headerlink" title="stat命令"></a>stat命令</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">stat text.txt #查看文件元数据(windows的属性)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h4 id="查看文件元数据"><a href="#查看文件元数据" class="headerlink" title="查看文件元数据"></a>查看文件元数据</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">stat text.txt #查看文件元数据(windows的属性)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<p>元数据：文件使用权限，大小，文件名称、属性等。</p>
-<p>最近访问时间(access time): 查看、读取文件内容的时间。</p>
-<p>最近更改时间(modify time): 文件元数据改变的时间。</p>
-<p>最近改动时间(change time): 文件元数据改变的时间。</p>
-<h3 id="文件查找命令"><a href="#文件查找命令" class="headerlink" title="文件查找命令"></a>文件查找命令</h3><h4 id="locate、find命令"><a href="#locate、find命令" class="headerlink" title="locate、find命令"></a>locate、find命令</h4><p>与grep不同，locate相当于windows的搜索。但是locate依赖于搜索数据库，无法对新建文件进行查找，也无法掠过刚删除的文件。有滞后性。</p>
-<p>查找文件一般用find命令！</p>
+<p><strong>元数据</strong>：文件使用权限，大小，文件名称、属性等。</p>
+<p>**最近访问时间(access time)**：查看、读取文件内容的时间。</p>
+<p>**最近更改时间(modify time)**：文件元数据改变的时间。</p>
+<p>**最近改动时间(change time)**：文件元数据改变的时间。</p>
+<h3 id="文件查找命令"><a href="#文件查找命令" class="headerlink" title="文件查找命令"></a>文件查找命令</h3><p><strong>简介</strong>：与grep不同，locate相当于windows的搜索。但是locate依赖于搜索数据库，无法对新建文件进行查找，也无法掠过刚删除的文件。有滞后性。</p>
+<p><strong>注意</strong>：查找文件一般用find命令！</p>
 <pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">locate ssd_config #快速的文件查找命令
 
 find [查找起始路径][选项][查找条件][处理动作]
@@ -737,10 +1061,10 @@ find &#x2F;etc -name &quot;*passwd*&quot; #多级(递归)查找名字里含有pa
 find &#x2F;etc -iname &quot;passwd&quot; #忽略大小写查找名字叫passwd的文件
 find -empty &#x2F;root #查找空目录<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>按文件类型查找：普通文件(f)、目录(d)、符号链接文件(l)、块设备文件(b)、字符设备文件(c)等。</p>
+<p><strong>按文件类型查找</strong>：普通文件(f)、目录(d)、符号链接文件(l)、块设备文件(b)、字符设备文件(c)等。</p>
 <pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">find &#x2F;boot -type d #查找子目录<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<p>处理动作用法:</p>
+<p><strong>处理动作用法</strong>：</p>
 <pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">find &#x2F;boot -type d -ls #查看boot文件的详细信息
 find &#x2F;boot -empty -type d #查看空目录
 find &#x2F;boot -empty -type f #查看空文件
@@ -753,22 +1077,384 @@ rm -f &#x2F;tmp&#x2F;*.txt #只能删除tmp文件里的.txt文件<span aria-hidd
 
 <h4 id="xargs命令——find辅助命令"><a href="#xargs命令——find辅助命令" class="headerlink" title="xargs命令——find辅助命令"></a>xargs命令——find辅助命令</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<h3 id="vi编辑器"><a href="#vi编辑器" class="headerlink" title="vi编辑器"></a>vi编辑器</h3><p><img src="/2021/12/03/linux-bi-ji/image-20211201202923047.png" alt="image-20211201202923047"></p>
+<h3 id="vi-vim-编辑器"><a href="#vi-vim-编辑器" class="headerlink" title="vi(vim)编辑器"></a>vi(vim)编辑器</h3><p><img src="/2021/12/03/linux-bi-ji/image-20211201202923047-165873022679514.png"></p>
 <p>默认在命令模式</p>
 <p>按<code>a、i、o</code>进入输入模式</p>
 <p>按<code>：</code>键进入末行模式</p>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">vim[文件名]
-:set nu + 回车 #写入行号
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h4 id="命令模式操作："><a href="#命令模式操作：" class="headerlink" title="命令模式操作："></a>命令模式操作：</h4><h5 id="光标移动"><a href="#光标移动" class="headerlink" title="光标移动"></a>光标移动</h5><table>
+<thead>
+<tr>
+<th align="center">操作类型</th>
+<th align="center">操作键</th>
+<th align="center">功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">光标方向移动</td>
+<td align="center">↑，↓，←，→</td>
+<td align="center">上，下，左，右</td>
+</tr>
+<tr>
+<td align="center">翻页</td>
+<td align="center">Page Down或Ctrl+F</td>
+<td align="center">向下翻动一整页内容</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">Page Up或CtrI+B</td>
+<td align="center">向上翻动一整页内容</td>
+</tr>
+<tr>
+<td align="center">行内快速跳转</td>
+<td align="center"><code>Home</code>键或<code>^</code>、数字<code>0</code></td>
+<td align="center">跳转至行首</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"><code>End</code>键或<code>$</code>键</td>
+<td align="center">跳转至行尾</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">#→</td>
+<td align="center">向右移动#个字符</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">#←</td>
+<td align="center">向左移动#个字符</td>
+</tr>
+<tr>
+<td align="center">行间快速跳转</td>
+<td align="center">1G或者gg</td>
+<td align="center">跳转到文件的首行</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">G</td>
+<td align="center">跳转到文件的尾行</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">#G</td>
+<td align="center">跳转到文件中的第#行</td>
+</tr>
+<tr>
+<td align="center">行号显示</td>
+<td align="center">:set nu</td>
+<td align="center">在编辑器中显示行号</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">:set nonu</td>
+<td align="center">取消编辑器中的行号显示</td>
+</tr>
+</tbody></table>
+<h5 id="复制，粘贴，删除"><a href="#复制，粘贴，删除" class="headerlink" title="复制，粘贴，删除"></a>复制，粘贴，删除</h5><table>
+<thead>
+<tr>
+<th align="center">操作类型</th>
+<th align="center">操作键</th>
+<th align="center">功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">删除</td>
+<td align="center">x或<code>Del</code>键</td>
+<td align="center">删除光标处的单个字符</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">dd</td>
+<td align="center">删除当前光标所在行</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">#dd</td>
+<td align="center">删除从光标处开始的行内容</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">d^</td>
+<td align="center">删除当前光标之前到行首的所有字符</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">d$</td>
+<td align="center">删除当前光标处到行尾的所有字符</td>
+</tr>
+<tr>
+<td align="center">复制</td>
+<td align="center">yy</td>
+<td align="center">复制当前行整行的内容到剪贴板</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">#yy</td>
+<td align="center">复制从光标处开始的行内容</td>
+</tr>
+<tr>
+<td align="center">粘贴</td>
+<td align="center">p</td>
+<td align="center">将缓冲区中的内容粘贴到光标位置处之后</td>
+</tr>
+</tbody></table>
+<h5 id="文件内容查找"><a href="#文件内容查找" class="headerlink" title="文件内容查找"></a>文件内容查找</h5><table>
+<thead>
+<tr>
+<th align="center">操作键</th>
+<th align="center">功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">&#x2F;word</td>
+<td align="center">从上而下在文件中查找字符串“word”</td>
+</tr>
+<tr>
+<td align="center">?word</td>
+<td align="center">从下而上在文件中查找字符串”word”</td>
+</tr>
+<tr>
+<td align="center">n</td>
+<td align="center">定位下一个匹配的被查找字符串</td>
+</tr>
+<tr>
+<td align="center">N</td>
+<td align="center">定位上一个配的被查找字符串</td>
+</tr>
+</tbody></table>
+<h5 id="撤销编辑"><a href="#撤销编辑" class="headerlink" title="撤销编辑"></a>撤销编辑</h5><table>
+<thead>
+<tr>
+<th align="center">操作键</th>
+<th align="center">功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">u</td>
+<td align="center">按一次取消最近的一次操作<br>多次重复按u健，恢复已进行的多步操作</td>
+</tr>
+<tr>
+<td align="center">U</td>
+<td align="center">用于取消对当前行所做的所有编辑</td>
+</tr>
+<tr>
+<td align="center">Ctrl+r</td>
+<td align="center">重做最后一次所撤销的操作</td>
+</tr>
+</tbody></table>
+<h4 id="输入模式操作："><a href="#输入模式操作：" class="headerlink" title="输入模式操作："></a>输入模式操作：</h4><ol>
+<li><p><strong>i</strong>：当前字符之前插入 （光标前）</p>
+</li>
+<li><p><strong>I</strong>：行首插入 （行首）</p>
+</li>
+<li><p><strong>a</strong>：当前字符之后插入 （光标后）</p>
+</li>
+<li><p><strong>A</strong>：行尾插入（行尾）</p>
+</li>
+<li><p><strong>o</strong>：下一行插入 （另起一行）</p>
+</li>
+<li><p><strong>O</strong>：上一行插入（上一行插入）</p>
+</li>
+</ol>
+<h4 id="末行模式操作："><a href="#末行模式操作：" class="headerlink" title="末行模式操作："></a>末行模式操作：</h4><table>
+<thead>
+<tr>
+<th>功能</th>
+<th>命令</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>保存文件</td>
+<td>:w</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>:w &#x2F;root&#x2F;newfile</td>
+<td>另存为其他文件</td>
+</tr>
+<tr>
+<td>退出vi</td>
+<td>:q</td>
+<td>未修改退出</td>
+</tr>
+<tr>
+<td></td>
+<td>:q!</td>
+<td>放弃修改并退出</td>
+</tr>
+<tr>
+<td>保存文件退出vi</td>
+<td>:wq</td>
+<td></td>
+</tr>
+</tbody></table>
+<h4 id="可视模式操作："><a href="#可视模式操作：" class="headerlink" title="可视模式操作："></a>可视模式操作：</h4><p>除了上述三种常规模式之外，vi编辑器还有一种种可视模式，由于操作较为简单，所以略作介绍。<br>在命令模式下按下v键便可以进入可视模式，此时左右移动方向键，就会将光标所经过区域的字符选中，然后可以用y键进行复制，用d键进行删除，或是用p键进行粘贴。不论执行何种操<br>作，在操作结束之后，都会自动退出可视模式。</p>
+<h3 id="开关机命令"><a href="#开关机命令" class="headerlink" title="开关机命令"></a>开关机命令</h3><h4 id="shutdown命令"><a href="#shutdown命令" class="headerlink" title="shutdown命令"></a>shutdown命令</h4><p><strong>简介</strong>：会给系统计划一个时间关机。它可以被用于停止、关机、重启机器。</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">shutdown 		# 关机
+shutdown now	# 马上关机
+shutdown 13:20 	# 在13:20分关机
+shutdown -H now # 停止机器
+shutdown -r 09:35 	# 在09:35am重启机器
+shutdown -c 	# 取消任何shutdown命令<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h4 id="命令模式操作："><a href="#命令模式操作：" class="headerlink" title="命令模式操作："></a>命令模式操作：</h4><p><img src="/2021/12/03/linux-bi-ji/image-20211201203234659.png" alt="image-20211201203234659"></p>
-<p><img src="/2021/12/03/linux-bi-ji/image-20211201203511811.png" alt="image-20211201203511811"></p>
-<p><img src="/2021/12/03/linux-bi-ji/image-20211201203613167.png" alt="image-20211201203613167"></p>
-<p><img src="/2021/12/03/linux-bi-ji/image-20211201203851448.png" alt="image-20211201203851448"></p>
-<h4 id="插入模式操作："><a href="#插入模式操作：" class="headerlink" title="插入模式操作："></a>插入模式操作：</h4><p><img src="/2021/12/03/linux-bi-ji/image-20211201204138235.png" alt="image-20211201204138235"></p>
-<h4 id="末行模式操作："><a href="#末行模式操作：" class="headerlink" title="末行模式操作："></a>末行模式操作：</h4><p><img src="/2021/12/03/linux-bi-ji/image-20211201204459230.png" alt="image-20211201204459230"></p>
-<h4 id="可视模式操作："><a href="#可视模式操作：" class="headerlink" title="可视模式操作："></a>可视模式操作：</h4><p><img src="/2021/12/03/linux-bi-ji/image-20211201205056019.png" alt="image-20211201205056019"></p>
-<h3 id="sudo命令"><a href="#sudo命令" class="headerlink" title="sudo命令"></a>sudo命令</h3>
+<h4 id="halt命令"><a href="#halt命令" class="headerlink" title="halt命令"></a>halt命令</h4><p><strong>简介</strong>：通知硬件来停止所有的 CPU 功能，但是仍然保持通电。你可以用它使系统处于低层维护状态。</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">halt			# 停止机器
+halt -p			# 关闭机器
+halt --reboot	# 重启机器<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="poweroff命令"><a href="#poweroff命令" class="headerlink" title="poweroff命令"></a>poweroff命令</h4><p><strong>简介</strong>：会发送一个 ACPI 信号来通知系统关机。</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">poweroff			# 关闭计算机
+poweroff --halt 	# 停止机器
+poweroff --reboot	# 重启机器<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="reboot命令"><a href="#reboot命令" class="headerlink" title="reboot命令"></a>reboot命令</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">reboot			# 重启机器
+reboot --halt 	# 停止机器
+reboot -p		# 关闭机器<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="init命令及7个启动级别"><a href="#init命令及7个启动级别" class="headerlink" title="init命令及7个启动级别"></a>init命令及7个启动级别</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">#0 系统停机模式
+init 0 #关机
+
+#1 单用户模式，root权限，用于系统维护，禁止远程登陆，就像Windows下的安全模式登录
+init 1
+
+#2 多用户模式，没有NFS和网络支持
+init 2
+
+#3 完整的多用户文本模式，有NFS和网络，登陆后进入控制台命令行模式
+init 3
+
+#4 系统未使用，保留一般不用，在一些特殊情况下可以用它来做一些事情。例如在笔记本电脑的电池用尽时，可以切换到这个模式来做一些设置
+init 4
+
+#5 图形化模式，登陆后进入图形GUI模式，X Window系统
+init 5
+
+#6 重启模式，默认运行级别不能设为6，否则不能正常启动。运行init 6机器就会重启
+init 6<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="修改上海时区"><a href="#修改上海时区" class="headerlink" title="修改上海时区"></a>修改上海时区</h3><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"># timedatectl # 查看系统时间方面的各种状态
+      Local time: 四 2014-12-25 10:52:10 CST
+  Universal time: 四 2014-12-25 02:52:10 UTC
+        RTC time: 四 2014-12-25 02:52:10
+        Timezone: Asia&#x2F;Shanghai (CST, +0800)
+     NTP enabled: yes
+NTP synchronized: yes
+ RTC in local TZ: no
+      DST active: n&#x2F;a
+# timedatectl list-timezones # 列出所有时区
+# timedatectl set-local-rtc 1 # 将硬件时钟调整为与本地时钟一致, 0 为设置为 UTC 时间
+# timedatectl set-timezone Asia&#x2F;Shanghai # 设置系统时区为上海
+其实不考虑各个发行版的差异化, 从更底层出发的话, 修改时间时区比想象中要简单:
+
+# cp &#x2F;usr&#x2F;share&#x2F;zoneinfo&#x2F;Asia&#x2F;Shanghai &#x2F;etc&#x2F;localtime<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="编写shell脚本"><a href="#编写shell脚本" class="headerlink" title="编写shell脚本"></a>编写shell脚本</h3><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">#!&#x2F;bin&#x2F;bash
+time1&#x3D;%(date)
+echo 当前操作系统为：
+cat &#x2F;etc&#x2F;redhat-release
+echo -e &quot;\033[32;40m当前时间为: $time1\033[0m&quot;
+echo -e &quot;\033[32;40m选择功能\033[0m&quot;
+echo -e &quot;\033[31;40m1. 备份并配置静态IP\033[0m&quot;
+echo -e &quot;\033[31;40m2. 配置主机名\033[0m&quot;
+echo -e &quot;\033[31;40m3. 关闭防火墙\033[0m&quot;
+echo -e &quot;\033[31;40m4. 备份并关闭selinux\033[0m&quot;
+echo -e &quot;\033[31;40m5. 挂载镜像\033[0m&quot;
+echo -e &quot;\033[31;40m6. 配置本地yum指向镜像\033[0m&quot;
+echo -e &quot;\033[31;40m6. 配置阿里云yum\033[0m&quot;
+
+read number
+if [$number &#x3D;&#x3D; 1]
+then
+#备份网络配置文件
+cp &#x2F;etc&#x2F;sysconfig&#x2F; network- scripts&#x2F;ifcfg-ens33 &#x2F;etc&#x2F;sysconfig&#x2F; network- scripts&#x2F; ifcfg-ens33. bak
+
+#自定义配置静态IP
+read -p &quot;请输入ip地址:&quot; a
+read -p &quot;请输入网关地址:&quot; b
+cat &gt; &#x2F;etc&#x2F;sysconfig&#x2F;network-scripts&#x2F;ifcfg-ens33 &lt;&lt; today
+TYPE&#x3D;&quot;Ethernet&quot;
+BOOTPROTO&#x3D;&quot;static&quot;
+IPADDR&#x3D;$a
+GATEWAY&#x3D;$b
+DEFROUTE&#x3D;&quot;yes&quot;
+NAME&#x3D;&quot;ens33&quot;
+DEVICE&#x3D;&quot;ens33&quot;
+ONBOOT&#x3D;&quot;yes&quot;
+today
+
+#配置主机名
+read -p &quot;请输入主机名:&quot; c
+echo &quot;$c&quot; &gt;&#x2F;etc&#x2F;hostname
+
+#关闭防火墙
+systemctl stop firewalld
+systemctl disable firewalld
+
+#备份selinux配置文件
+cp &#x2F;etc&#x2F;selinux&#x2F;config &#x2F;etc&#x2F;selinux
+
+#关闭selinux
+echo &quot; \
+SELINUX&#x3D;disabled
+SELINUXTYPE&#x3D;targeted &quot; &gt;&#x2F;etc&#x2F;seliunx&#x2F;config
+
+#永久挂载
+echo &quot;&#x2F;dev&#x2F;sr0 &#x2F;mnt iso9660 defaults 0 0&quot; &gt;&gt; &#x2F;etc&#x2F;fstab
+
+#备份原有yum仓库
+cd &#x2F;etc&#x2F; yum. repos.d 
+mkdir bak 
+mv * bak
+
+#配置本地yum源
+echo
+[local]
+name&#x3D; this is a local.repo
+baseurl&#x3D;file:&#x2F;&#x2F;&#x2F;mnt
+enabled&#x3D;1
+gpgcheck&#x3D;0 &quot; &gt;&#x2F;etc&#x2F;yum.repos.d&#x2F;local.repo
+
+#配置网络yum源
+curl -0 &#x2F;etc&#x2F;yum.repos.d&#x2F;CentOS-Base.repo https:&#x2F;&#x2F;mirrors.aliyun.com&#x2F; repo&#x2F;Centos-7.repo
+yum makecache
+yum install -y wget vim
+
+#配置重启
+reboot<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="安装数据库"><a href="#安装数据库" class="headerlink" title="安装数据库"></a>安装数据库</h3><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">yum search mariadb  # 查找mysql包
+yum install mariadb maridb-server -y # 安装mysql
+systemctl status mariadb # 查看mysql状态
+systemctl start mariadb # 启动mysql
+cd 
+mysql_secure_installation # 数据库安全初始化
+# 设置密码
+# 关闭匿名用户
+# 不允许root远程登陆
+# 移除测试数据库
+# 重新加载权限表
+show databace # 列出数据库
+
+mysql -uroot -p <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="远程连接数据库"><a href="#远程连接数据库" class="headerlink" title="远程连接数据库"></a>远程连接数据库</h4><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">select user,host form mysql.user;
+use mysql;
+show tables;
+select * from user\G;
+update mysql.user set host&#x3D;&quot;%&quot; where host&#x3D;&#39;localhost&#39;; # 把表里所有用户的localhost改为%
+select user,host from mysql.user; # 
+flush <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="关于系统"><a href="#关于系统" class="headerlink" title="关于系统"></a>关于系统</h3><p><strong>简介</strong>：常见的架构有LAMP（阿帕奇），LNMP（nginx），LNMT（Tomcat）</p>
+<ol>
+<li>学信系统</li>
+<li>校园系统</li>
+<li>网站系统</li>
+</ol>
+
                 
             </div>
             <hr/>
