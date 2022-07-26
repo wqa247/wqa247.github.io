@@ -506,7 +506,7 @@
 <p><strong>历史</strong>：</p>
 <p>Linus觉得Bitkeeper的版本控制好用，但是Bitkeeper在2005年结束了与Linux的合作。于是Linus又花了两周时间来开发git来管理Linux版本</p>
 <p>目前，Git是世界上最先进的分布式版本管理系统</p>
-<h3 id="版本控制"><a href="#版本控制" class="headerlink" title="版本控制"></a>版本控制</h3><h5 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h5><p>版本控制( Revision control)是一种在开发的过程中用于管理我们对文件、目录或工程等内容的修改历史。方便直看更故历史记<br>录。备份以便恢复以前的版本的软件工程技术</p>
+<h3 id="版本控制"><a href="#版本控制" class="headerlink" title="版本控制"></a>版本控制</h3><h4 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h4><p><strong>版本控制</strong>( Revision control)是一种在开发的过程中用于管理我们对文件、目录或工程等内容的修改历史。方便直看更故历史记<br>录。备份以便恢复以前的版本的软件工程技术</p>
 <ol>
 <li><p>实现跨区域多人协同开发</p>
 </li>
@@ -541,13 +541,13 @@
 <h5 id="分布式版本控制"><a href="#分布式版本控制" class="headerlink" title="分布式版本控制"></a>分布式版本控制</h5><p><strong>简介</strong>：所有版本信息仓库全部同步到本地的每一个用户，这样就可以在本地查看所有版本的历史，可以离线在本地提交，只需联网时push到相应的服务器或其他用户那里。由于每个用户保存的都是所有的版本数据，只要有一个用户的设备没有问题就可以恢复所有的数据，但是这增加了本地存储空间的占用</p>
 <p><img src="/2022/07/23/git-bi-ji/image-20220722133655779-16587279261312.png"></p>
 <p><strong>代表产品</strong>：Git</p>
-<h3 id="使用git"><a href="#使用git" class="headerlink" title="使用git"></a>使用git</h3><p><strong>下载</strong>：去<strong>官网</strong>或<strong>阿里镜像源</strong>下载即可</p>
+<h3 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h3><p><strong>下载</strong>：去<strong>官网</strong>或<strong>阿里镜像源</strong>下载即可</p>
 <p><strong>安装</strong>：无脑下一步。安装完毕即可看到如下程序</p>
 <p><img src="/2022/07/23/git-bi-ji/image-20220722135142964-16587279261315.png"></p>
 <p><strong>Git Bash</strong>：Unix与Linux风格命令行，使用最多</p>
 <p><strong>Git CMD</strong>：Windows风格命令行</p>
 <p><strong>Git GUI</strong>：图形界面的Git，不建议初学者使用，尽量先熟悉常用命令</p>
-<h5 id="配置git"><a href="#配置git" class="headerlink" title="配置git"></a>配置git</h5><p><strong>注意</strong>：所有的配置文件都保存在本地，git配置的本质是文件</p>
+<h3 id="配置git"><a href="#配置git" class="headerlink" title="配置git"></a>配置git</h3><p><strong>注意</strong>：所有的配置文件都保存在本地，git配置的本质是文件</p>
 <p><strong>查看git配置</strong>：</p>
 <pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">git config -l #查看所有git配置
 git config --global --list # 查看用户的全局配置<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
@@ -559,7 +559,7 @@ git config --global --list # 查看用户的全局配置<span aria-hidden="true"
 <pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">git config --global user.name &quot;wqa247&quot; #名称
 git config --global user.email &quot;1101447047@qq.com&quot; #邮箱<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
-<h5 id="git基本理论-核心"><a href="#git基本理论-核心" class="headerlink" title="git基本理论(核心)"></a>git基本理论(核心)</h5><p><strong>Git本地有四个工作区</strong>：</p>
+<h3 id="git基本理论-核心"><a href="#git基本理论-核心" class="headerlink" title="git基本理论(核心)"></a>git基本理论(核心)</h3><p><strong>Git本地有四个工作区</strong>：</p>
 <ol>
 <li>工作目录(Working Directory)</li>
 <li>暂存区(Stage&#x2F;Index)</li>
@@ -574,7 +574,7 @@ git config --global user.email &quot;1101447047@qq.com&quot; #邮箱<span aria-h
 <li>将需要进行版本管理的文件放入暂存区域</li>
 <li>将暂存区域的文件提交到git仓库</li>
 </ol>
-<h4 id="git项目搭建"><a href="#git项目搭建" class="headerlink" title="git项目搭建"></a>git项目搭建</h4><h5 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h5><p><img src="/2022/07/23/git-bi-ji/image-20220722162509921-16587279261316.png"></p>
+<h3 id="git项目搭建"><a href="#git项目搭建" class="headerlink" title="git项目搭建"></a>git项目搭建</h3><h5 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h5><p><img src="/2022/07/23/git-bi-ji/image-20220722162509921-16587279261316.png"></p>
 <h5 id="新建git项目"><a href="#新建git项目" class="headerlink" title="新建git项目"></a>新建git项目</h5><p>创建一个空文件夹</p>
 <pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">git init #初始化git
 git clone (url) #克隆库初始化<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
