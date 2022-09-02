@@ -1,7 +1,6 @@
+https://www.maxstars.xyz/2022/07/23/git-bi-ji/
 https://www.maxstars.xyz/2022/08/24/opencv-xue-xi-bi-ji/
 https://www.maxstars.xyz/2021/01/19/html-bi-ji/
-https://www.maxstars.xyz/googlef36388dc47215539.html
-https://www.maxstars.xyz/2022/07/23/git-bi-ji/
 https://www.maxstars.xyz/2021/11/05/hexo-da-jian-quan-jie/
 https://www.maxstars.xyz/2021/12/03/linux-bi-ji/
 https://www.maxstars.xyz/2021/11/04/typora-ru-men/
@@ -16,12 +15,12 @@ https://www.maxstars.xyz/categories/index.html
 https://www.maxstars.xyz/2021/12/03/ru-he-jie-jue-win10-dai-li-jiao-ben-wu-fa-guan-bi/
 https://www.maxstars.xyz/
 https://www.maxstars.xyz/tags/%E6%95%99%E7%A8%8B/
-https://www.maxstars.xyz/categories/Linux%E6%95%99%E7%A8%8B/
-https://www.maxstars.xyz/categories/hexo%E6%95%99%E7%A8%8B/
-https://www.maxstars.xyz/categories/git%E6%95%99%E7%A8%8B/
-https://www.maxstars.xyz/categories/%E5%89%8D%E7%AB%AF%E6%95%99%E7%A8%8B/
 https://www.maxstars.xyz/categories/%E8%BD%AF%E4%BB%B6/
-https://www.maxstars.xyz/categories/typora%E6%95%99%E7%A8%8B/
+https://www.maxstars.xyz/categories/Linux%E6%95%99%E7%A8%8B/
+https://www.maxstars.xyz/categories/git%E6%95%99%E7%A8%8B/
+https://www.maxstars.xyz/categories/hexo%E6%95%99%E7%A8%8B/
 https://www.maxstars.xyz/categories/openCV%E6%95%99%E7%A8%8B/
+https://www.maxstars.xyz/categories/typora%E6%95%99%E7%A8%8B/
 https://www.maxstars.xyz/categories/%E6%8A%93%E5%8C%85/
 https://www.maxstars.xyz/categories/win10%E5%B0%8F%E6%AF%9B%E7%97%85/
+https://www.maxstars.xyz/categories/%E5%89%8D%E7%AB%AF%E6%95%99%E7%A8%8B/

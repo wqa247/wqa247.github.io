@@ -467,7 +467,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-07-26
+                    2022-09-02
                 </div>
                 
 
@@ -534,17 +534,17 @@
 <li><strong>Visual Studio Online</strong></li>
 </ol>
 <h4 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h4><h5 id="本地版本控制"><a href="#本地版本控制" class="headerlink" title="本地版本控制"></a>本地版本控制</h5><p><strong>简介</strong>：记录文件每次的更新，可以对每个版本做一个快照或是补丁文件，适合个人用</p>
-<p><img src="/2022/07/23/git-bi-ji/image-20220722133052235-16587279261301.png"></p>
+<p><img src="/2022/07/23/git-bi-ji/image-20220722133052235-16587279261301-16588492064261.png"></p>
 <p><strong>代表产品</strong>：RCS</p>
 <h5 id="集中版本控制"><a href="#集中版本控制" class="headerlink" title="集中版本控制"></a>集中版本控制</h5><p><strong>简介</strong>：所有的版本数据都保存在服务器上，协同开发者从服务器上同步更新或上传自己的修改</p>
-<p><img src="/2022/07/23/git-bi-ji/image-20220722133228315-16587279261313.png"></p>
+<p><img src="/2022/07/23/git-bi-ji/image-20220722133228315-16587279261313-16588492064262.png"></p>
 <p><strong>代表产品</strong>：SVN，CVS，VSS</p>
 <h5 id="分布式版本控制"><a href="#分布式版本控制" class="headerlink" title="分布式版本控制"></a>分布式版本控制</h5><p><strong>简介</strong>：所有版本信息仓库全部同步到本地的每一个用户，这样就可以在本地查看所有版本的历史，可以离线在本地提交，只需联网时push到相应的服务器或其他用户那里。由于每个用户保存的都是所有的版本数据，只要有一个用户的设备没有问题就可以恢复所有的数据，但是这增加了本地存储空间的占用</p>
-<p><img src="/2022/07/23/git-bi-ji/image-20220722133655779-16587279261312.png"></p>
+<p><img src="/2022/07/23/git-bi-ji/image-20220722133655779-16587279261312-16588492064273.png"></p>
 <p><strong>代表产品</strong>：Git</p>
 <h3 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h3><p><strong>下载</strong>：去<strong>官网</strong>或<strong>阿里镜像源</strong>下载即可</p>
 <p><strong>安装</strong>：无脑下一步。安装完毕即可看到如下程序</p>
-<p><img src="/2022/07/23/git-bi-ji/image-20220722135142964-16587279261315.png"></p>
+<p><img src="/2022/07/23/git-bi-ji/image-20220722135142964-16587279261315-16588492064274.png"></p>
 <p><strong>Git Bash</strong>：Unix与Linux风格命令行，使用最多</p>
 <p><strong>Git CMD</strong>：Windows风格命令行</p>
 <p><strong>Git GUI</strong>：图形界面的Git，不建议初学者使用，尽量先熟悉常用命令</p>
@@ -568,14 +568,14 @@ git config --global user.email &quot;1101447047@qq.com&quot; #邮箱<span aria-h
 <li>远程git仓库(Remote Directory)</li>
 </ol>
 <p><strong>文件在这四个区域转换关系如下</strong>：</p>
-<p><img src="/2022/07/23/git-bi-ji/image-20220722160621980-16587279261314.png"></p>
+<p><img src="/2022/07/23/git-bi-ji/image-20220722160621980-16587279261314-16588492064277.png"></p>
 <p><strong>git工作流程</strong>：</p>
 <ol>
 <li>在工作目录中添加、修改文件</li>
 <li>将需要进行版本管理的文件放入暂存区域</li>
 <li>将暂存区域的文件提交到git仓库</li>
 </ol>
-<h3 id="git项目搭建"><a href="#git项目搭建" class="headerlink" title="git项目搭建"></a>git项目搭建</h3><h5 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h5><p><img src="/2022/07/23/git-bi-ji/image-20220722162509921-16587279261316.png"></p>
+<h3 id="git项目搭建"><a href="#git项目搭建" class="headerlink" title="git项目搭建"></a>git项目搭建</h3><h5 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h5><p><img src="/2022/07/23/git-bi-ji/image-20220722162509921-16587279261316-16588492064275.png"></p>
 <h5 id="新建git项目"><a href="#新建git项目" class="headerlink" title="新建git项目"></a>新建git项目</h5><p>创建一个空文件夹</p>
 <pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">git init #初始化git
 git clone (url) #克隆库初始化<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
@@ -606,7 +606,7 @@ git commit -m &quot;(版本信息)&quot; <span aria-hidden="true" class="line-nu
 git log
 git log --pretty&#x3D;oneline # 简单信息<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
-<p><img src="/2022/07/23/git-bi-ji/image-20220724123043012.png"></p>
+<p><img src="/2022/07/23/git-bi-ji/image-20220724123043012-16588492064276.png"></p>
 <pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"># 回退到上一个版本
 git reset --hard HEAD^
 git reset --hard HEAD~100 # 回退到上一百个版本
@@ -620,7 +620,7 @@ git reset --hard b194e7cebd # 这里的版本号不用写全，git会自动检�
 <pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"># 查看每一次版本变更
 git reflog<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
-<p><img src="/2022/07/23/git-bi-ji/image-20220724124402048.png"></p>
+<p><img src="/2022/07/23/git-bi-ji/image-20220724124402048-16588492064278.png"></p>
 <p><strong>作用</strong>：这样列出以后，我们可以轻松知道我们是从哪个版本过来的</p>
 <h5 id="删除文件"><a href="#删除文件" class="headerlink" title="删除文件"></a>删除文件</h5><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"># 删除本地文件
 rm 1.txt
@@ -661,20 +661,21 @@ build&#x2F; # 不上传build下的所有文件<span aria-hidden="true" class="li
 <pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"># 用git生成ssh
 ssh-keygen -t rsa # rsa代表加密<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
+<p><strong>注意</strong>：这里有提示，不用管，按三次回车就行</p>
 <p><strong>使用该命令后生成两个文件</strong>：</p>
-<p><img src="/2022/07/23/git-bi-ji/image-20220723171512527-16587279261317.png"></p>
+<p><img src="/2022/07/23/git-bi-ji/image-20220723171512527-16587279261317-16588492064279.png"></p>
 <p><strong>把公钥文件粘贴到你的ssh栏</strong>：</p>
-<p><img src="/2022/07/23/git-bi-ji/image-20220723171908152-16587279261318.png"></p>
+<p><img src="/2022/07/23/git-bi-ji/image-20220723171908152-16587279261318-165884920642710.png"></p>
 <p>把生成的公钥添加进来即可</p>
 <h5 id="新建仓库"><a href="#新建仓库" class="headerlink" title="新建仓库"></a>新建仓库</h5><p>随意填写内容即可</p>
-<p><img src="/2022/07/23/git-bi-ji/image-20220723173442585-16587279261319.png"></p>
+<p><img src="/2022/07/23/git-bi-ji/image-20220723173442585-16587279261319-165884920642711.png"></p>
 <p>使用创建完成后，复制链接：</p>
-<p><img src="/2022/07/23/git-bi-ji/image-20220723173602383-165872792613110.png"></p>
+<p><img src="/2022/07/23/git-bi-ji/image-20220723173602383-165872792613110-165884920642713.png"></p>
 <p>新建文件夹输入下列代码：</p>
 <pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">git clone [url]<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>内容一致：</p>
-<p><img src="/2022/07/23/git-bi-ji/image-20220723173723635-165872792613111.png"></p>
+<p><img src="/2022/07/23/git-bi-ji/image-20220723173723635-165872792613111-165884920642712.png"></p>
 <h5 id="IDEA使用git"><a href="#IDEA使用git" class="headerlink" title="IDEA使用git"></a>IDEA使用git</h5><p>在IDEA的terminal里可以操作git：</p>
 <pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">git add .
 git commit -m &quot;hello.java&quot;
