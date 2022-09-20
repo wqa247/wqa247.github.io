@@ -17,10 +17,10 @@ https://www.maxstars.xyz/
 https://www.maxstars.xyz/tags/%E6%95%99%E7%A8%8B/
 https://www.maxstars.xyz/categories/%E8%BD%AF%E4%BB%B6/
 https://www.maxstars.xyz/categories/Linux%E6%95%99%E7%A8%8B/
-https://www.maxstars.xyz/categories/git%E6%95%99%E7%A8%8B/
-https://www.maxstars.xyz/categories/hexo%E6%95%99%E7%A8%8B/
 https://www.maxstars.xyz/categories/openCV%E6%95%99%E7%A8%8B/
+https://www.maxstars.xyz/categories/hexo%E6%95%99%E7%A8%8B/
 https://www.maxstars.xyz/categories/typora%E6%95%99%E7%A8%8B/
+https://www.maxstars.xyz/categories/git%E6%95%99%E7%A8%8B/
 https://www.maxstars.xyz/categories/%E6%8A%93%E5%8C%85/
 https://www.maxstars.xyz/categories/win10%E5%B0%8F%E6%AF%9B%E7%97%85/
 https://www.maxstars.xyz/categories/%E5%89%8D%E7%AB%AF%E6%95%99%E7%A8%8B/

@@ -4,7 +4,7 @@
   <url>
     <loc>https://www.maxstars.xyz/2022/07/23/git-bi-ji/</loc>
     
-    <lastmod>2022-09-02</lastmod>
+    <lastmod>2022-09-20</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -139,7 +139,7 @@
 
   <url>
     <loc>https://www.maxstars.xyz/</loc>
-    <lastmod>2022-09-02</lastmod>
+    <lastmod>2022-09-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -147,7 +147,7 @@
   
   <url>
     <loc>https://www.maxstars.xyz/tags/%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2022-09-02</lastmod>
+    <lastmod>2022-09-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -156,63 +156,63 @@
   
   <url>
     <loc>https://www.maxstars.xyz/categories/%E8%BD%AF%E4%BB%B6/</loc>
-    <lastmod>2022-09-02</lastmod>
+    <lastmod>2022-09-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.maxstars.xyz/categories/Linux%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2022-09-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.maxstars.xyz/categories/git%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2022-09-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.maxstars.xyz/categories/hexo%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2022-09-02</lastmod>
+    <lastmod>2022-09-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.maxstars.xyz/categories/openCV%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2022-09-02</lastmod>
+    <lastmod>2022-09-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.maxstars.xyz/categories/hexo%E6%95%99%E7%A8%8B/</loc>
+    <lastmod>2022-09-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.maxstars.xyz/categories/typora%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2022-09-02</lastmod>
+    <lastmod>2022-09-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.maxstars.xyz/categories/git%E6%95%99%E7%A8%8B/</loc>
+    <lastmod>2022-09-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.maxstars.xyz/categories/%E6%8A%93%E5%8C%85/</loc>
-    <lastmod>2022-09-02</lastmod>
+    <lastmod>2022-09-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.maxstars.xyz/categories/win10%E5%B0%8F%E6%AF%9B%E7%97%85/</loc>
-    <lastmod>2022-09-02</lastmod>
+    <lastmod>2022-09-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.maxstars.xyz/categories/%E5%89%8D%E7%AB%AF%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2022-09-02</lastmod>
+    <lastmod>2022-09-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
