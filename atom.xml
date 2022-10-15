@@ -6,7 +6,7 @@
   <link href="https://www.maxstars.xyz/atom.xml" rel="self"/>
   
   <link href="https://www.maxstars.xyz/"/>
-  <updated>2022-08-24T05:07:54.536Z</updated>
+  <updated>2022-10-15T04:43:43.226Z</updated>
   <id>https://www.maxstars.xyz/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>索尼(SONY)Xperia X Performance 502SO强刷</title>
+    <link href="https://www.maxstars.xyz/2022/10/15/ji-yi-ci-suo-ni-shua-ji/"/>
+    <id>https://www.maxstars.xyz/2022/10/15/ji-yi-ci-suo-ni-shua-ji/</id>
+    <published>2022-10-15T04:43:00.000Z</published>
+    <updated>2022-10-15T04:43:43.226Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="索尼-SONY-Xperia-X-Performance-502SO强刷"><a href="#索尼-SONY-Xperia-X-Performance-502SO强刷" class="headerlink" title="索尼(SONY)Xperia X Performance 502SO强刷"></a>索尼(SONY)Xperia X Performance 502SO强刷</h2><p><strong>强刷软件</strong>：<a href="http://www.flashtool.net/">Flashtool</a></p><p>**502so强刷包下载(谷歌云盘)**：<a href="https://orirom.com/sony-xperia-x-performance-502so-firmware-ftf-for-flashtool/">https://orirom.com/sony-xperia-x-performance-502so-firmware-ftf-for-flashtool/</a></p><p><strong>参考教程</strong>：<a href="https://onfix.cn/course/515?bid=763&amp;mid=24442">https://onfix.cn/course/515?bid=763&amp;mid=24442</a></p><p><strong>注意</strong>：</p><ol><li><p>一个合适的网络环境可以减少很多无关的工作量，如果报错请自己查看参考教程。(你没有这个网络环境也不会买日版的吧)</p></li><li><p>刷机前请保证有30%以上的电源，否则会导致无法刷机！</p></li><li><p>由于502SO的特殊性，我不建议你一上来就刷别的包，最好刷502SO自己官方的固件</p></li><li><p>这个刷机教程的步骤对大部分索尼手机也适用</p></li></ol><h3 id="安装驱动"><a href="#安装驱动" class="headerlink" title="安装驱动"></a>安装驱动</h3><p>下载好flashtool后安装。安装完成就能看到drivers文件夹，点击里面的安装程序</p><p><img src="/2022/10/15/ji-yi-ci-suo-ni-shua-ji/image-20221015095823944.png"></p><p>安装前两项即可</p><p><img src="/2022/10/15/ji-yi-ci-suo-ni-shua-ji/image-20221015113908162.png"></p><h3 id="更新Sync固件"><a href="#更新Sync固件" class="headerlink" title="更新Sync固件"></a>更新Sync固件</h3><p>打开软件等待更新即可。</p><p><strong>注意</strong>：更新需要连接GitHub，如无法更新请自己查找相关驱动覆盖进devices文件夹内，路径为：<code>C:\Users\用户名\.flashTool\devices</code></p><p><img src="/2022/10/15/ji-yi-ci-suo-ni-shua-ji/image-20221015114403491.png"></p><h3 id="导入强刷固件"><a href="#导入强刷固件" class="headerlink" title="导入强刷固件"></a>导入强刷固件</h3><p><strong>导入固件到路径</strong>：<code>C:\Users\用户名\.flashTool\firmwares</code></p><p>路径里默认有文件，忽略即可</p><p><img src="/2022/10/15/ji-yi-ci-suo-ni-shua-ji/image-20221015114652981.png"></p><h3 id="准备刷机"><a href="#准备刷机" class="headerlink" title="准备刷机"></a>准备刷机</h3><p><strong>运行flashtool选择闪电标志，选择flashmode，点击ok</strong>：</p><p><img src="/2022/10/15/ji-yi-ci-suo-ni-shua-ji/image-20221015114832072.png"></p><p>**选择你的固件包并勾选disable final verification(关闭最终认证)**：</p><p><img src="/2022/10/15/ji-yi-ci-suo-ni-shua-ji/image-20221015115038017.png"></p><p><strong>content</strong>：固件内容</p><p><strong>wipe</strong>：需要清空的内容</p><p><strong>exclude</strong>：排除的文件(勾选不刷入)</p><p><strong>注意</strong>：假如有simlock.ta(sim卡锁)选项千万不要勾选，不要刷这个文件</p><p><strong>选择需要清空的内容</strong>：</p><p>一般选择<code>APPS_LOG</code>和<code>USERDATA</code></p><p><img src="/2022/10/15/ji-yi-ci-suo-ni-shua-ji/image-20221015115658012.png"></p><p><img src="/2022/10/15/ji-yi-ci-suo-ni-shua-ji/image-20221015115711898.png"></p><p><strong>点击Flash</strong>：</p><p><img src="/2022/10/15/ji-yi-ci-suo-ni-shua-ji/image-20221015115851706.png"></p><p><strong>读条走完后会提示</strong>：</p><p><img src="/2022/10/15/ji-yi-ci-suo-ni-shua-ji/image-20221015115937483.png"></p><h3 id="让手机进入flashmode-绿灯模式"><a href="#让手机进入flashmode-绿灯模式" class="headerlink" title="让手机进入flashmode(绿灯模式)"></a>让手机进入flashmode(绿灯模式)</h3><ol><li>将手机关机，等待手机完全关机</li><li>先按住音量减键，等待3秒左右插上USB线到电脑</li><li>看到绿灯亮起即进入了flashmode</li></ol><p><img src="/2022/10/15/ji-yi-ci-suo-ni-shua-ji/IMG_20221015_121842.jpg"></p><h3 id="开始线刷"><a href="#开始线刷" class="headerlink" title="开始线刷"></a>开始线刷</h3><p><strong>检测到手机后会提示</strong>：</p><p><img src="/2022/10/15/ji-yi-ci-suo-ni-shua-ji/image-20221015120840499.png"></p><p>点击是即可</p><p><strong>这时不要操作电脑等待读条跑完</strong>：</p><p><img src="/2022/10/15/ji-yi-ci-suo-ni-shua-ji/image-20221015120947529.png"></p><p>看到读条不动或者卡住时不要紧张，摸摸手机看看是否发热，若正常情况下会有温度。</p><p>等到出现Flashing finished即代表刷机成功：</p><p><img src="/2022/10/15/ji-yi-ci-suo-ni-shua-ji/image-20221015121634751.png"></p><h3 id="开机"><a href="#开机" class="headerlink" title="开机"></a>开机</h3><p>拔出数据线，手机会自动退出绿灯模式，长按电源键开机，开机可能会长时间停在这个界面，耐心等待即可：</p><p><img src="/2022/10/15/ji-yi-ci-suo-ni-shua-ji/IMG_20221015_122324.jpg"></p><p>等待3-5分钟左右即进入首次开机界面：</p><p><img src="/2022/10/15/ji-yi-ci-suo-ni-shua-ji/IMG_20221015_122729.jpg"></p><p>此时你的手机已经完成刷机并确保可以投入使用了！</p><p><img src="/2022/10/15/ji-yi-ci-suo-ni-shua-ji/IMG_20221015_123552.jpg"></p><p>进行一些简单的设置即可进入主界面</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;索尼-SONY-Xperia-X-Performance-502SO强刷&quot;&gt;&lt;a href=&quot;#索尼-SONY-Xperia-X-Performance-502SO强刷&quot; class=&quot;headerlink&quot; title=&quot;索尼(SONY)Xperia X Per</summary>
+      
+    
+    
+    
+    <category term="刷机教程" scheme="https://www.maxstars.xyz/categories/%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="教程" scheme="https://www.maxstars.xyz/tags/%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
   
   <entry>
     <title>openCV学习笔记</title>
