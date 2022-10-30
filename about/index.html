@@ -585,7 +585,7 @@
                 type: 'pie',
                 radius: '50%',
                 color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
-                data: [{"name":"前端教程","value":1},{"name":"软件","value":1},{"name":"openCV教程","value":1},{"name":"git教程","value":1},{"name":"抓包","value":1},{"name":"hexo教程","value":1},{"name":"Linux教程","value":1},{"name":"微PE教程","value":1},{"name":"typora教程","value":1},{"name":"win10小毛病","value":1},{"name":"刷机教程","value":1}],
+                data: [{"name":"软件","value":1},{"name":"hexo教程","value":1},{"name":"前端教程","value":1},{"name":"git教程","value":1},{"name":"抓包","value":1},{"name":"Linux教程","value":1},{"name":"typora教程","value":1},{"name":"微PE教程","value":1},{"name":"openCV教程","value":1},{"name":"刷机教程","value":1},{"name":"win10小毛病","value":1}],
                 itemStyle: {
                     emphasis: {
                         shadowBlur: 10,
@@ -742,6 +742,60 @@
 
 
     <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="3224336193"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="/libs/aplayer/Meting.min.js"></script>
+
     
 
     <div class="container row center-align"

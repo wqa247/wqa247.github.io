@@ -173,13 +173,6 @@
 
   
   <url>
-    <loc>https://www.maxstars.xyz/categories/%E5%89%8D%E7%AB%AF%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2022-10-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://www.maxstars.xyz/categories/%E8%BD%AF%E4%BB%B6/</loc>
     <lastmod>2022-10-30</lastmod>
     <changefreq>weekly</changefreq>
@@ -187,7 +180,14 @@
   </url>
   
   <url>
-    <loc>https://www.maxstars.xyz/categories/openCV%E6%95%99%E7%A8%8B/</loc>
+    <loc>https://www.maxstars.xyz/categories/hexo%E6%95%99%E7%A8%8B/</loc>
+    <lastmod>2022-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.maxstars.xyz/categories/%E5%89%8D%E7%AB%AF%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2022-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -208,21 +208,7 @@
   </url>
   
   <url>
-    <loc>https://www.maxstars.xyz/categories/hexo%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2022-10-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://www.maxstars.xyz/categories/Linux%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2022-10-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.maxstars.xyz/categories/%E5%BE%AEPE%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2022-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -236,7 +222,14 @@
   </url>
   
   <url>
-    <loc>https://www.maxstars.xyz/categories/win10%E5%B0%8F%E6%AF%9B%E7%97%85/</loc>
+    <loc>https://www.maxstars.xyz/categories/%E5%BE%AEPE%E6%95%99%E7%A8%8B/</loc>
+    <lastmod>2022-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.maxstars.xyz/categories/openCV%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2022-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -244,6 +237,13 @@
   
   <url>
     <loc>https://www.maxstars.xyz/categories/%E5%88%B7%E6%9C%BA%E6%95%99%E7%A8%8B/</loc>
+    <lastmod>2022-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.maxstars.xyz/categories/win10%E5%B0%8F%E6%AF%9B%E7%97%85/</loc>
     <lastmod>2022-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
