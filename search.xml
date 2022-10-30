@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>制作你的第一个微PE</title>
+      <link href="/2022/10/30/zhi-zuo-ni-de-di-yi-ge-wei-pe/"/>
+      <url>/2022/10/30/zhi-zuo-ni-de-di-yi-ge-wei-pe/</url>
+      
+        <content type="html"><![CDATA[<h2 id="制作你的第一个微PE"><a href="#制作你的第一个微PE" class="headerlink" title="制作你的第一个微PE"></a>制作你的第一个微PE</h2><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p><strong>简介</strong>：微PE是U盘启动系统，基于win10 PE内核，集成了一些重装系统，数据恢复的基本功能。</p><p><strong>注意</strong>：安装U盘启动系统时会清空U盘数据，请自行备份。微PE无法联网，请注意安装的软件是否需要联网</p><p><strong>官网</strong>：<a href="https://www.wepe.com.cn/">https://www.wepe.com.cn/</a></p><p><strong>下载</strong>：<a href="https://www.wepe.com.cn/download.html">https://www.wepe.com.cn/download.html</a></p><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p><strong>简介</strong>：微PE的安装十分简单，只需下载安装包，按照步骤选择安装的U盘即可。下载好后双击安装文件运行，我这个是微PE_V2.2：</p><p><img src="/2022/10/30/zhi-zuo-ni-de-di-yi-ge-wei-pe/image-20221030100011533.png"></p><p><strong>修改分区格式为NTFS</strong>：</p><p><img src="/2022/10/30/zhi-zuo-ni-de-di-yi-ge-wei-pe/image-20221030100157336.png"></p><p><strong>注意</strong>：确认自己的U盘卷标，以免安装错误</p><p>这里壁纸酌情选择，我这里留空为默认</p><p>其他默认，点击安装进U盘等待进度条跑完即可</p><h3 id="使用VMware测试启动盘"><a href="#使用VMware测试启动盘" class="headerlink" title="使用VMware测试启动盘"></a>使用VMware测试启动盘</h3><p><strong>简介</strong>：安装好U盘启动盘后我们需要对启动盘进行测试，具体思路分别为实体机测试和虚拟机测试。我这里使用虚拟机VMware进行测试</p><h4 id="新建测试环境"><a href="#新建测试环境" class="headerlink" title="新建测试环境"></a>新建测试环境</h4><p><strong>从选项卡里选择新建</strong>：</p><p><img src="/2022/10/30/zhi-zuo-ni-de-di-yi-ge-wei-pe/image-20221029202114751.png"></p><p><strong>这里选择稍后安装</strong>：</p><p><img src="/2022/10/30/zhi-zuo-ni-de-di-yi-ge-wei-pe/image-20221029202525973.png"></p><p><strong>其他无脑下一步即可！</strong></p><p><strong>完成后编辑硬盘，使用物理磁盘的U盘</strong>：</p><p><img src="/2022/10/30/zhi-zuo-ni-de-di-yi-ge-wei-pe/image-20221029203423822.png"></p><p><img src="/2022/10/30/zhi-zuo-ni-de-di-yi-ge-wei-pe/image-20221029203507372.png"></p><p><img src="/2022/10/30/zhi-zuo-ni-de-di-yi-ge-wei-pe/image-20221029203543352.png"></p><p><strong>一般最下面的盘是U盘</strong>：</p><p><img src="/2022/10/30/zhi-zuo-ni-de-di-yi-ge-wei-pe/image-20221029203652312.png"></p><p><strong>其他无脑下一步即可</strong>！</p><p>完成以后设置从BIOS启动：</p><p><strong>点击启动键的下拉栏，选择从固件启动</strong>：</p><p><img src="/2022/10/30/zhi-zuo-ni-de-di-yi-ge-wei-pe/image-20221029203944522.png"></p><p><strong>选择第二个硬盘</strong>：</p><p><img src="/2022/10/30/zhi-zuo-ni-de-di-yi-ge-wei-pe/image-20221029205449423.png"></p><p><strong>等待加载即可，若无法加载系统，就是没装好微PE。加载完成后即可进入winPE</strong>：</p><p><img src="/2022/10/30/zhi-zuo-ni-de-di-yi-ge-wei-pe/image-20221029205557587.png"></p><h3 id="添加Windows镜像"><a href="#添加Windows镜像" class="headerlink" title="添加Windows镜像"></a>添加Windows镜像</h3><p><strong>简介</strong>：重装镜像并没有包含在微PE中，你需要自己添加。</p><p><strong>下载的方式有两种</strong>：</p><p><strong>官网下载</strong>：<a href="https://www.microsoft.com/zh-cn/software-download">https://www.microsoft.com/zh-cn/software-download</a></p><p><img src="/2022/10/30/zhi-zuo-ni-de-di-yi-ge-wei-pe/image-20221030102413037.png"></p><p>这里直接选择所有镜像即可，按照提示选择语言然后就可以下载</p><p><strong>MSDN</strong>：<a href="https://msdn.itellyou.cn/">https://msdn.itellyou.cn/</a></p><p>MSDN的下载就很直接，想下载哪个直接下载即可</p><p>下载好镜像后复制到U盘，直接放到大的分区即可，小的是系统分区</p><p><img src="/2022/10/30/zhi-zuo-ni-de-di-yi-ge-wei-pe/image-20221030102900714.png"></p><h3 id="检查添加的镜像"><a href="#检查添加的镜像" class="headerlink" title="检查添加的镜像"></a>检查添加的镜像</h3><p><strong>简介</strong>：打开VMware，进入创建好的环境测试</p><p><strong>点击Windows安装器</strong>：</p><p><img src="/2022/10/30/zhi-zuo-ni-de-di-yi-ge-wei-pe/image-20221030104603495.png"></p><p><strong>选择安装文件位置即可找到镜像</strong>：</p><p><img src="/2022/10/30/zhi-zuo-ni-de-di-yi-ge-wei-pe/image-20221030104755280.png"></p><p><strong>注意</strong>：安装系统时，这里引导盘和安装盘一般都设置为C盘，除非你的引导盘和安装盘不在一个位置</p><p>到这里，微PE就已经测试完成了，你的微PE可以正式投入使用了</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 微PE教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>索尼(SONY)Xperia X Performance 502SO强刷</title>
       <link href="/2022/10/15/ji-yi-ci-suo-ni-shua-ji/"/>
       <url>/2022/10/15/ji-yi-ci-suo-ni-shua-ji/</url>
