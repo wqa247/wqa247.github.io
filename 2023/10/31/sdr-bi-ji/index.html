@@ -606,7 +606,6 @@
 <h5 id="安装SDR-英文插件社区版"><a href="#安装SDR-英文插件社区版" class="headerlink" title="安装SDR#英文插件社区版"></a>安装SDR#英文插件社区版</h5><p><strong>简介</strong>：社区版下载下来是一个sdr#的安装器，社区下载过程我就不演示了，安装好后进入<code>bin</code>文件夹，选择<code>zadig.exe</code>来安装驱动</p>
 <h5 id="安装驱动"><a href="#安装驱动" class="headerlink" title="安装驱动"></a>安装驱动</h5><p><strong>注意</strong>：请正确安装驱动否则可能会覆盖一些正常的驱动，例如网卡，鼠标的驱动，请参考上述汉化版安装教程，作者已经介绍很详细了，我这里在讲一些重点</p>
 <p>选择<code>options</code>里的<code>list all devices</code>：</p>
-<p>![](SDR笔记&#x2F;Zadig 2023_10_25 10_47_24.png)</p>
 <p><img src="/2023/10/31/sdr-bi-ji/68747470733a2f2f7777772e72746c2d7364722e636f6d2f77702d636f6e74656e742f75706c6f6164732f323031332f30342f7a616469675f312e706e67.png"></p>
 <p>如果你使用的是Win10，有时候你需要把“Ignore Hubs or Composite Parents”（忽略集线器和复合设备中的父设备，译者注）选项前面的勾去掉；</p>
 <p>在下拉菜单中选择“Bulk-In, Interface(Interface 0)”，注意在有些计算机中你将会看到名如“RTL2832UHIDIR”或“RTL2832U”的设备取代了Bulk-In, Interface的位置，出现这种情况的时候，选这个也可以。不要选择<strong>USB Receiver (Interface 0)或者 Interface 1或者这之外的任何选项，不然你会把不该覆写的驱动覆写掉！</strong>，反复检查以确保USB ID项显示“0BDA 2838 00”，表明现在是接收器作为选中的设备；</p>
@@ -621,7 +620,7 @@
 <p><strong>其中要注意下面几个点</strong>：</p>
 <h5 id="Radio"><a href="#Radio" class="headerlink" title="Radio"></a>Radio</h5><p><strong>简介</strong>：Radio(无线电)主要调整接收模式和一些主要功能。</p>
 <p><img src="/2023/10/31/sdr-bi-ji/image-20231030195718683.png"></p>
-<p>**Snap to Grid&#x2F;Step size(对齐到网络，步进大小) **：可以设置步进频率，取消对齐即可设置自由频率。老版本的RTL-SDR会因为过热导致频率偏移，这里一般不使用步进频率来手动对齐频偏</p>
+<p><strong>Snap to Grid&#x2F;Step size</strong>(对齐到网络，步进大小)：可以设置步进频率，取消对齐即可设置自由频率。老版本的RTL-SDR会因为过热导致频率偏移，这里一般不使用步进频率来手动对齐频偏</p>
 <p><img src="/2023/10/31/sdr-bi-ji/image-20231030143706380.png"></p>
 <p><strong>NFM(Narrowband Frequency Modulation)窄带频率调制</strong>：对讲机无线电、气象无线电和大部分甚高频&#x2F;超高频数字信号常用的模式。</p>
 <p><strong>WFM(Wideband Frequency Modulation)宽带频率调制</strong>：这是广播调频电台使用的模式(例如广播音乐电台)，气象卫星也会使用WFM进行发送和接收。</p>
@@ -635,19 +634,19 @@
 <p><strong>Filter滤波器</strong>：更改所使用的筛选器类型。不同的过滤器有不同的形状。滤波器用于在 RF 窗口中选择突出显示的信号。布莱克曼-哈里斯通常是最好的过滤器选择，这个设置几乎从来没有需要改变。<br><strong>默认设置</strong>：Blackman-Harris 4</p>
 <p><strong>order</strong>：更改筛选顺序。您可能会注意到，当使用低滤波器命令时，仍然可以听到调谐带宽以外的信号。较大的滤波器命令“收紧”或“锐化”在调谐带宽&#x2F;中频内使用的带通滤波器，从而防止被听到调谐带宽以外的信号。当有强烈的信号接近你的调谐区域时，你会想要增加滤波器的顺序。使用更高的过滤器顺序可能会导致更大的 CPU 负载，因此低速 PC 可能需要降低这个值。<br><strong>默认设置</strong>：1000</p>
 <p><strong>squelch(静噪)设置</strong>：当信号低于指定值(dBFS)时，采取静音。<br><strong>默认设置</strong>：只有NFM才设置静噪为50</p>
-<p>**Stereo(FM立体声)**：这个按钮只有在使用WFM模式时才可选中，主要功能和描述的一样，让FM电台的单声道转为立体声，开启这个按钮可能会让弱电台的声音更差。<br><strong>默认设置</strong>：关</p>
+<p><strong>Stereo</strong>(FM立体声)：这个按钮只有在使用WFM模式时才可选中，主要功能和描述的一样，让FM电台的单声道转为立体声，开启这个按钮可能会让弱电台的声音更差。<br><strong>默认设置</strong>：关</p>
 <p><strong>CW Shift</strong>：主要用于接收连续波(莫尔斯电码)时，因为它指定了连续波发射和接收频率之间的偏移。<br><strong>默认设置</strong>：1000</p>
 <p><strong>Correct IQ</strong>：通常应该被设置成打开的状态。这个设置消除了R820T&#x2F;R820T2 RTL-SDR 接收器存在的小而恼人的中心尖峰。但是，在使用SDR#+WXtoImg接收NOAA气象卫星时，你必须关掉这个设置，否则你的音频将会无法解析</p>
 <p><img src="/2023/10/31/sdr-bi-ji/image-20231030144617190.png"></p>
 <p><strong>Lock Carrier</strong>：只能在AM和DSB模式使用。允许同步调幅，可以显著改善接收，也可以自动将载波信号对正中心，但是可能会增加CPU的使用。</p>
-<p>**Anti-Fading(防衰减)**：在Lock Carrier未被激活时使用。利用调幅信号的对称性，有助于抵抗弱信号的淡入淡出，但可能会增加CPU的使用</p>
+<p><strong>Anti-Fading</strong>(防衰减)：在Lock Carrier未被激活时使用。利用调幅信号的对称性，有助于抵抗弱信号的淡入淡出，但可能会增加CPU的使用</p>
 <h5 id="Display"><a href="#Display" class="headerlink" title="Display"></a>Display</h5><p><strong>简介</strong>：Display界面主要设置频谱图和瀑布流的显示效果</p>
 <p><img src="/2023/10/31/sdr-bi-ji/image-20231030150629305.png"></p>
-<p>**Resolution(分辨率)**：提高分辨率将提高信号在 RF 显示器和瀑布中的外观质量。在进行微调时，使用更高的分辨率可能是有用的，因为高分辨率可以让您更清楚地看到信号的峰值和结构。请注意，高分辨率可能会降低您的电脑速度，并可能导致麻烦，特别是与单核心机器。一般来说，如果你的电脑可以处理的话，应该使用至少<code>32768</code>的值。通常不用调整，会使得频谱变卡顿</p>
-<p>**Gradient(渐变色)**：允许您自定义瀑布流中显示颜色</p>
-<p>**Time Markers(时间标记)**：在瀑布显示上添加时间标记，这样您就可以知道特定信号广播的时间。</p>
-<p>**Mark Peaks(标记峰值)**：简单地利用圆圈标记射频谱中的任何峰值。可以在Display中找到</p>
-<p>**Speed(速度)**：更改 RF 频谱和瀑布更新的速度。通常不会调整</p>
+<p><strong>Resolution</strong>(分辨率)：提高分辨率将提高信号在 RF 显示器和瀑布中的外观质量。在进行微调时，使用更高的分辨率可能是有用的，因为高分辨率可以让您更清楚地看到信号的峰值和结构。请注意，高分辨率可能会降低您的电脑速度，并可能导致麻烦，特别是与单核心机器。一般来说，如果你的电脑可以处理的话，应该使用至少<code>32768</code>的值。通常不用调整，会使得频谱变卡顿</p>
+<p><strong>Gradient</strong>(渐变色)：允许您自定义瀑布流中显示颜色</p>
+<p><strong>Time Markers</strong>(时间标记)：在瀑布显示上添加时间标记，这样您就可以知道特定信号广播的时间。</p>
+<p><strong>Mark Peaks</strong>(标记峰值)：简单地利用圆圈标记射频谱中的任何峰值。可以在Display中找到</p>
+<p><strong>Speed</strong>(速度)：更改 RF 频谱和瀑布更新的速度。通常不会调整</p>
 <h5 id="Audio"><a href="#Audio" class="headerlink" title="Audio"></a>Audio</h5><p><strong>简介</strong>：如果没有声音可以进入Audio(音频)中设置你的声卡。一般不用动，默认设置Microsoft Sound即可</p>
 <p><img src="/2023/10/31/sdr-bi-ji/image-20231030150909216.png"></p>
 <p><strong>Unity Gain</strong>：一般不打开，设置以后音频增益为0</p>
@@ -678,8 +677,8 @@
 <p><img src="/2023/10/31/sdr-bi-ji/image-20231031144438547.png"></p>
 <p>勾选后Zoom Bar即可显示在频谱右边：</p>
 <p><img src="/2023/10/31/sdr-bi-ji/image-20231031144344192.png"></p>
-<p>**Zoom(缩放)**：移动这个滑块将导致 RF 频谱和瀑布放大在您的调谐中频带宽区域，以便看到一个信号特写镜头。但是，放大得越多，分辨率就越低。缩放的一种替代方法是降低采样率，或者使用特殊的抽取驱动器。这些替代方法将保持视觉分辨率，并允许您更清楚地看到信号结构。</p>
-<p>**Contrast(对比度)**：调整瀑布的对比度，使信号清晰地从背景噪音中脱颖而出。</p>
+<p><strong>Zoom</strong>(缩放)：移动这个滑块将导致 RF 频谱和瀑布放大在您的调谐中频带宽区域，以便看到一个信号特写镜头。但是，放大得越多，分辨率就越低。缩放的一种替代方法是降低采样率，或者使用特殊的抽取驱动器。这些替代方法将保持视觉分辨率，并允许您更清楚地看到信号结构。</p>
+<p><strong>Contrast</strong>(对比度)：调整瀑布的对比度，使信号清晰地从背景噪音中脱颖而出。</p>
 <p><strong>Range</strong>：修改 RF 频谱窗口左(垂直)轴上显示的 dB 电平范围。你应该调整这一点，使噪音楼层坐落在接近底部的射频频谱窗口。这将允许信号在 FFT 射频频谱和瀑布显示器中更加可见。由于 RTL-SDR 的动态范围大约为50dB(过采样&#x2F;抽取后再加一点) ，所以不需要大于0到-70dB的范围。这种设置也会影响瀑布中的对比度，并可能有助于使微弱的信号更容易发现。<br><strong>默认设置</strong>：-70</p>
 <p><img src="/2023/10/31/sdr-bi-ji/sdrshapr_range_offset.png"></p>
 <p><strong>Offset</strong>：在 RF 频谱窗口中向 dB 电平范围添加偏移量。偏移量被添加到射频频谱中分贝电平范围的最高值。通常没有必要调整这一点，但如果你想得到真正良好的对比度的微弱信号，调整这随着范围，使信号高度是相同的高度作为垂直轴。这种设置也会影响瀑布中的对比度，并可能有助于使微弱的信号更容易发现。</p>
