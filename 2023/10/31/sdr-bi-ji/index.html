@@ -618,7 +618,7 @@
 <p><img src="/2023/10/31/sdr-bi-ji/%E7%95%8C%E9%9D%A2.png"></p>
 <p>你可以直接根据官方教程的指引来调整</p>
 <p><strong>其中要注意下面几个点</strong>：</p>
-<h5 id="Radio"><a href="#Radio" class="headerlink" title="Radio"></a>Radio</h5><p><strong>简介</strong>：Radio(无线电)主要调整接收模式和一些主要功能。</p>
+<h4 id="Radio"><a href="#Radio" class="headerlink" title="Radio"></a>Radio</h4><p><strong>简介</strong>：Radio(无线电)主要调整接收模式和一些主要功能。</p>
 <p><img src="/2023/10/31/sdr-bi-ji/image-20231030195718683.png"></p>
 <p><strong>Snap to Grid&#x2F;Step size</strong>(对齐到网络，步进大小)：可以设置步进频率，取消对齐即可设置自由频率。老版本的RTL-SDR会因为过热导致频率偏移，这里一般不使用步进频率来手动对齐频偏</p>
 <p><img src="/2023/10/31/sdr-bi-ji/image-20231030143706380.png"></p>
@@ -640,28 +640,28 @@
 <p><img src="/2023/10/31/sdr-bi-ji/image-20231030144617190.png"></p>
 <p><strong>Lock Carrier</strong>：只能在AM和DSB模式使用。允许同步调幅，可以显著改善接收，也可以自动将载波信号对正中心，但是可能会增加CPU的使用。</p>
 <p><strong>Anti-Fading</strong>(防衰减)：在Lock Carrier未被激活时使用。利用调幅信号的对称性，有助于抵抗弱信号的淡入淡出，但可能会增加CPU的使用</p>
-<h5 id="Display"><a href="#Display" class="headerlink" title="Display"></a>Display</h5><p><strong>简介</strong>：Display界面主要设置频谱图和瀑布流的显示效果</p>
+<h4 id="Display"><a href="#Display" class="headerlink" title="Display"></a>Display</h4><p><strong>简介</strong>：Display界面主要设置频谱图和瀑布流的显示效果</p>
 <p><img src="/2023/10/31/sdr-bi-ji/image-20231030150629305.png"></p>
 <p><strong>Resolution</strong>(分辨率)：提高分辨率将提高信号在 RF 显示器和瀑布中的外观质量。在进行微调时，使用更高的分辨率可能是有用的，因为高分辨率可以让您更清楚地看到信号的峰值和结构。请注意，高分辨率可能会降低您的电脑速度，并可能导致麻烦，特别是与单核心机器。一般来说，如果你的电脑可以处理的话，应该使用至少<code>32768</code>的值。通常不用调整，会使得频谱变卡顿</p>
 <p><strong>Gradient</strong>(渐变色)：允许您自定义瀑布流中显示颜色</p>
 <p><strong>Time Markers</strong>(时间标记)：在瀑布显示上添加时间标记，这样您就可以知道特定信号广播的时间。</p>
 <p><strong>Mark Peaks</strong>(标记峰值)：简单地利用圆圈标记射频谱中的任何峰值。可以在Display中找到</p>
 <p><strong>Speed</strong>(速度)：更改 RF 频谱和瀑布更新的速度。通常不会调整</p>
-<h5 id="Audio"><a href="#Audio" class="headerlink" title="Audio"></a>Audio</h5><p><strong>简介</strong>：如果没有声音可以进入Audio(音频)中设置你的声卡。一般不用动，默认设置Microsoft Sound即可</p>
+<h4 id="Audio"><a href="#Audio" class="headerlink" title="Audio"></a>Audio</h4><p><strong>简介</strong>：如果没有声音可以进入Audio(音频)中设置你的声卡。一般不用动，默认设置Microsoft Sound即可</p>
 <p><img src="/2023/10/31/sdr-bi-ji/image-20231030150909216.png"></p>
 <p><strong>Unity Gain</strong>：一般不打开，设置以后音频增益为0</p>
 <p><strong>Filter Audio</strong>：通过过滤音频，去除高音嘶嘶声和直流噪声来改善语音信号。如果解码数字信号，通常应该关闭，但实际上对某些情况可能有帮助，如果有明显的直流偏移</p>
-<h5 id="AGC"><a href="#AGC" class="headerlink" title="AGC"></a>AGC</h5><p><strong>简介</strong>：AGC(audio automatic gain control)音频自动增益。打开AGC时，它将尝试自动控制音量水平，使声音不会太大声，也不会太小声。这个设置适用于语音音频信号，在收听 AM&#x2F;USB&#x2F;LSB 信号时，打开这个开关尤其有用，因为在这些模式下，强信号听起来可能会失真。</p>
+<h4 id="AGC"><a href="#AGC" class="headerlink" title="AGC"></a>AGC</h4><p><strong>简介</strong>：AGC(audio automatic gain control)音频自动增益。打开AGC时，它将尝试自动控制音量水平，使声音不会太大声，也不会太小声。这个设置适用于语音音频信号，在收听 AM&#x2F;USB&#x2F;LSB 信号时，打开这个开关尤其有用，因为在这些模式下，强信号听起来可能会失真。</p>
 <p><img src="/2023/10/31/sdr-bi-ji/image-20231030152302828.png"></p>
-<h5 id="SDR-Digital-Noise-Reduction"><a href="#SDR-Digital-Noise-Reduction" class="headerlink" title="SDR# Digital Noise Reduction"></a>SDR# Digital Noise Reduction</h5><p><strong>简介</strong>：Digital Noise Reduction(数字降噪)有两种方式，一种是基于audio音频的，一种是基于IF(Intermediate Frequency)中频的。</p>
+<h4 id="SDR-Digital-Noise-Reduction"><a href="#SDR-Digital-Noise-Reduction" class="headerlink" title="SDR# Digital Noise Reduction"></a>SDR# Digital Noise Reduction</h4><p><strong>简介</strong>：Digital Noise Reduction(数字降噪)有两种方式，一种是基于audio音频的，一种是基于IF(Intermediate Frequency)中频的。</p>
 <p><img src="/2023/10/31/sdr-bi-ji/image-20231031085027534.png"></p>
 <p>当听到微弱和嘈杂的模拟语音信号时，打开数字降噪是有用的。此设置将尝试减少背景“嘶嘶”声。有两个DNR选项可用，IF和audio。中频对中频信号使用降噪算法，而音频选项对输出音频信号进行降噪。通常中频数字降噪效果最好，应该首先尝试，尽管两者的结合可能最好。滑块控制应用算法的强度，并且配置文件可以针对您正在收听的音频类型进行优化。配置文件的选项是高保真，交谈，语音，窄带和自定义。</p>
 <p><img src="/2023/10/31/sdr-bi-ji/sdrsharp_dnr.png"></p>
-<h5 id="Noise-Blanker"><a href="#Noise-Blanker" class="headerlink" title="Noise Blanker"></a>Noise Blanker</h5><p><strong>简介</strong>：Noise Blanker(噪声消除器)是一种算法，可以打开，以帮助减少冲击和脉冲类噪声的来源，如火花隙。这类噪音的例子可能来自电动机、电线、以太网供电和开关电源。小心使用这个选项可以真正有助于接收跳动噪音中的微弱信号，噪音通常出现在HF波段。噪声消除器的工作原理是简单地去除任何含有大脉冲能量的样品。</p>
+<h4 id="Noise-Blanker"><a href="#Noise-Blanker" class="headerlink" title="Noise Blanker"></a>Noise Blanker</h4><p><strong>简介</strong>：Noise Blanker(噪声消除器)是一种算法，可以打开，以帮助减少冲击和脉冲类噪声的来源，如火花隙。这类噪音的例子可能来自电动机、电线、以太网供电和开关电源。小心使用这个选项可以真正有助于接收跳动噪音中的微弱信号，噪音通常出现在HF波段。噪声消除器的工作原理是简单地去除任何含有大脉冲能量的样品。</p>
 <p><img src="/2023/10/31/sdr-bi-ji/image-20231031085659046.png"></p>
 <p>在 SDR # 中有两种不同类型的噪声消除器。基带噪声消除器在整个频谱上工作，将从 FFT 和瀑布中去除脉冲，而解调器噪声消除器只在目前正在解调的调谐区域内工作。调优设置主要是试验中的一个练习错误。移动滑块，直到脉动噪音消失，同时试图保持信号活跃。</p>
 <p><img src="/2023/10/31/sdr-bi-ji/sdrsharp_nb.png"></p>
-<h5 id="Recorder"><a href="#Recorder" class="headerlink" title="Recorder"></a>Recorder</h5><p><strong>简介</strong>：recorder(录音机)标签允许您进行 I&#x2F;Q 和音频录音。示例格式允许您选择所需的录音质量水平。</p>
+<h4 id="Recorder"><a href="#Recorder" class="headerlink" title="Recorder"></a>Recorder</h4><p><strong>简介</strong>：recorder(录音机)标签允许您进行 I&#x2F;Q 和音频录音。示例格式允许您选择所需的录音质量水平。</p>
 <p><img src="/2023/10/31/sdr-bi-ji/image-20231031090542961.png"></p>
 <p>由于 RTL-SDR 只有大约8位，我们可以选择最低的8位 PCM 选项。只使用8位可以节省大量的磁盘空间。</p>
 <p><img src="/2023/10/31/sdr-bi-ji/image-20231031143133231.png" alt="Baseband设置"></p>
@@ -670,10 +670,10 @@
 <p>baseband(基带)记录是指当前调谐到的整个 ~ 2MHz 带宽的记录。它将 RF 数据保存在带宽内，因此您可以在以后重播它。通过选择“ record”可以进行 I&#x2F;Q 录制。请注意，I&#x2F;Q 记录可能会占用大量磁盘空间，因此请确保观察“文件大小”和“持续时间”状态计数器。通过选择 IQ 文件(*) ，可以在 SDR # 中回放 I&#x2F;Q 录音。Wav).如果你接收到大量丢失的缓冲区，那么你的电脑或磁盘可能根本不够快，以处理记录。请记住，基带录音使用大量的磁盘空间。</p>
 <p>通过勾选“音频”复选框可以录制从扬声器发出的音频。这将记录音频到一个标准的音频。Wav 文件。所有记录的文件都存储在与 SDR # 可执行文件相同的文件夹中。</p>
 <p><img src="/2023/10/31/sdr-bi-ji/image-20231031091007229.png"></p>
-<h5 id="Frequency-Manager-Tab"><a href="#Frequency-Manager-Tab" class="headerlink" title="Frequency Manager Tab"></a>Frequency Manager Tab</h5><p><strong>简介</strong>：频率管理器允许您将感兴趣的任何频率保存到数据库中。通过单击 New 按钮，可以向数据库添加新的频率。这将添加一个具有当前调谐频率和设置(如带宽)的频率。您可以编辑频率名称，并将其放入一个组，以便于管理。双击存储条目将立即调整 SDR # 到该频率，并设置存储模式和带宽。</p>
+<h4 id="Frequency-Manager-Tab"><a href="#Frequency-Manager-Tab" class="headerlink" title="Frequency Manager Tab"></a>Frequency Manager Tab</h4><p><strong>简介</strong>：频率管理器允许您将感兴趣的任何频率保存到数据库中。通过单击 New 按钮，可以向数据库添加新的频率。这将添加一个具有当前调谐频率和设置(如带宽)的频率。您可以编辑频率名称，并将其放入一个组，以便于管理。双击存储条目将立即调整 SDR # 到该频率，并设置存储模式和带宽。</p>
 <p>如果您选中“Show on spectrum(显示频谱)”复选框，那么您保存的频率将显示在射频频谱。</p>
 <p><img src="/2023/10/31/sdr-bi-ji/image-20231031143854948.png"></p>
-<h5 id="zoom-bar"><a href="#zoom-bar" class="headerlink" title="zoom bar"></a>zoom bar</h5><p><strong>简介</strong>：右侧的滑块调整了 RF 频谱和瀑布的图形显示设置，你可以在lay out中选中Zoom Bar显示它：</p>
+<h4 id="zoom-bar"><a href="#zoom-bar" class="headerlink" title="zoom bar"></a>zoom bar</h4><p><strong>简介</strong>：右侧的滑块调整了 RF 频谱和瀑布的图形显示设置，你可以在lay out中选中Zoom Bar显示它：</p>
 <p><img src="/2023/10/31/sdr-bi-ji/image-20231031144438547.png"></p>
 <p>勾选后Zoom Bar即可显示在频谱右边：</p>
 <p><img src="/2023/10/31/sdr-bi-ji/image-20231031144344192.png"></p>
@@ -683,7 +683,7 @@
 <p><img src="/2023/10/31/sdr-bi-ji/sdrshapr_range_offset.png"></p>
 <p><strong>Offset</strong>：在 RF 频谱窗口中向 dB 电平范围添加偏移量。偏移量被添加到射频频谱中分贝电平范围的最高值。通常没有必要调整这一点，但如果你想得到真正良好的对比度的微弱信号，调整这随着范围，使信号高度是相同的高度作为垂直轴。这种设置也会影响瀑布中的对比度，并可能有助于使微弱的信号更容易发现。</p>
 <p><img src="/2023/10/31/sdr-bi-ji/sdrsharp_offset.png"></p>
-<h5 id="Source"><a href="#Source" class="headerlink" title="Source"></a>Source</h5><p><strong>简介</strong>：Source(源)是选择信号来源的菜单，你可以在这里选择信号来源的方式，同时可以调整驱动和一些别的设置。Source中的configure和播放键旁边的齿轮按钮功能是一样的</p>
+<h4 id="Source"><a href="#Source" class="headerlink" title="Source"></a>Source</h4><p><strong>简介</strong>：Source(源)是选择信号来源的菜单，你可以在这里选择信号来源的方式，同时可以调整驱动和一些别的设置。Source中的configure和播放键旁边的齿轮按钮功能是一样的</p>
 <p><img src="/2023/10/31/sdr-bi-ji/image-20231031151438599.png"></p>
 <p>SDR # configure 窗口可以通过点击 SDR # 窗口顶部的齿轮图标来访问。这个窗口中的设置影响 RTL-SDR 的实际射频性能，应该正确设置以优化信噪比(SNR)。配置窗口有几个选项，如下所述。</p>
 <p>请记住，有些选项可能是灰色的，直到您按下停止在 SDR # 。</p>
