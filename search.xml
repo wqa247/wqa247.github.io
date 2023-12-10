@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>MIX2S刷入澎湃OS</title>
+      <link href="/2023/12/10/mix2s-shua-ru-peng-pai-os/"/>
+      <url>/2023/12/10/mix2s-shua-ru-peng-pai-os/</url>
+      
+        <content type="html"><![CDATA[<h2 id="MIX2S刷入澎湃OS"><a href="#MIX2S刷入澎湃OS" class="headerlink" title="MIX2S刷入澎湃OS"></a>MIX2S刷入澎湃OS</h2><h3 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h3><p><strong>简介</strong>：最近闲来无事，在阅读小米的《一往无前》。看到小米那么多的传奇故事，热血沸腾，也让我对小米的理解更深入了。一个机缘巧合，在我读到雷军在小米论坛的名字是”小虾米”时，我就把小米社区下载了回来，想找一下雷军到底发过什么帖子。然而我并没有找到那个当初那个属于他的账号，却碰巧看到了有人在MIX2S上刷澎湃OS的帖子。</p><p><img src="/2023/12/10/mix2s-shua-ru-peng-pai-os/image-20231210195541334.png"></p><p>好啊，于是我去b站一搜MIX2S澎湃OS，马上来了展示：</p><p><img src="/2023/12/10/mix2s-shua-ru-peng-pai-os/image-20231210195752865.png"></p><p>一个亮眼的二次元壁纸总是可以吸引我这种人去抄作业，况且这是澎湃OS。<a href="https://www.bilibili.com/video/BV1mj411L7hV">视频链接</a></p><p><img src="/2023/12/10/mix2s-shua-ru-peng-pai-os/image-20231210200226158.png"></p><p>视频下面提示酷安见，于是又闻着味来到了酷安</p><p><img src="/2023/12/10/mix2s-shua-ru-peng-pai-os/image-20231210200948430.png"></p><p>我把这刚发布没多久的帖子发给了我认识的一位刷机大佬，他觉得不错，叫我去刷。我没啥刷机经验，但是我当时很代入MIUI为发烧而生的精神，于是连夜开刷。</p><h3 id="准备资源"><a href="#准备资源" class="headerlink" title="准备资源"></a>准备资源</h3><p><strong>简介</strong>：本教程适合做好驱动的windows 10，你需要准备好一台打好<strong>ADB</strong>和<strong>fastboot</strong>驱动的电脑。这里不介绍怎么打驱动了。</p><p>首先进作者的博客看介绍并回复，就能拿到三个包</p><p><strong>作者介绍</strong>：<a href="https://www.xbzj.love/index.php/archives/266.html">https://www.xbzj.love/index.php/archives/266.html</a></p><p><strong>然后下载作者提供的三个包</strong>：</p><p><img src="/2023/12/10/mix2s-shua-ru-peng-pai-os/image-20231210203122252.png"></p><p>同时，你要使用小米官方的<code>flash_unlock</code>来解<strong>BL锁</strong>，解锁BL你才能刷机</p><p><strong>官网下载地址</strong>：<a href="https://www.miui.com/unlock/download.html">https://www.miui.com/unlock/download.html</a></p><p>最后你需要下载你现在版本的线刷包和miflash和9008线刷工具箱，以防变砖。这里最好下载低版本的，MIUI12可以。</p><p><strong>变砖指的是两种状态</strong>：1. 进不了rec，能进fastboot；2. rec和fastboot都进不了</p><p><strong>线刷包可以在miui历史版本这个网站下载</strong>：<a href="https://miuiver.com/tag/polaris-stable-rom/">https://miuiver.com/tag/polaris-stable-rom/</a></p><p><strong>线刷工具miflash下载</strong>：<a href="https://miuiver.com/miflash/">https://miuiver.com/miflash/</a></p><p><strong>9008刷机工具箱</strong>：<a href="https://medl845.agxmx.top/">https://medl845.agxmx.top/</a></p><p><strong>注意</strong>：在重复刷入<strong>system分区扩容包</strong>后有可能变砖，在你不确定是否刷入时，你需要<strong>重置system分区</strong>，或者直接使用9008强刷退回MIUI12以下</p><p>记得自己准备ADB！</p><h3 id="开始刷机"><a href="#开始刷机" class="headerlink" title="开始刷机"></a>开始刷机</h3><p><strong>注意</strong>：刷机有风险，刷机前你需要保存好你的数据，解锁BL会将数据全部删除，准备好另一台手机在酷安上找报错，如果你看得懂XDA论坛也可以搜索</p><p><strong>参考</strong>：<a href="https://zhuanlan.zhihu.com/p/103005475">https://zhuanlan.zhihu.com/p/103005475</a></p><p><strong>操作</strong>：</p><p>进入解锁工具按照提示解锁，先不用关机登录一下小米账号。解锁完成后会在开机logo显示一个开锁图案。</p><p>解锁完成等待重启，进入系统后按住<code>音量-</code>和<code>开机键</code>进入fastboot</p><p>找到miflash的文件夹，输入powershell进入powershell：</p><p><img src="/2023/12/10/mix2s-shua-ru-peng-pai-os/image-20231210210343493.png"></p><p><img src="/2023/12/10/mix2s-shua-ru-peng-pai-os/image-20231210210416961.png"></p><pre class="line-numbers language-sh" data-language="sh"><code class="language-sh"># 检查fastboot是否连接.\fastboot devices# 刷入recovery 将recovery.img替换成你的路径.\fastboot flash recovery recovery.img<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>这时你会看到：</p><p><img src="/2023/12/10/mix2s-shua-ru-peng-pai-os/image-20231210211017761.png"></p><p>这说明recovery已经刷进去了。</p><p>不用关机，直接使用<code>音量+</code>+<code>开机键</code>进入TWRP：</p><p><img src="/2023/12/10/mix2s-shua-ru-peng-pai-os/image-20231210211741871.png"></p><p><strong>进入到清除选项开始双清</strong>：</p><p>选择高级清除，选择所有选项，滑动按钮清除。</p><p>然后返回选择格式化Data分区，输入yes。格式化完成后重启recovery，开始传入system扩容包</p><pre class="line-numbers language-sh" data-language="sh"><code class="language-sh"># 使用adb命令传入扩容包,修改&quot;MIX2s_5GB_System.zip&quot;为自己的路径adb push &quot;MIX2s_5GB_System.zip&quot; &#x2F;sdcard&#x2F;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>使用安装，进入<code>/sdcard/</code>选择刷机包，滑动刷入</p><p>刷完后重启进入recovery，那你就快成功了，没有进入使用9008线刷倒挡，或重新分区</p><p>刷入后重启进入<code>rec</code>(recovery)</p><pre class="line-numbers language-sh" data-language="sh"><code class="language-sh"># 传入刷机包adb push &quot;HyperOS A13 Xiaomi MIX 2s.zip&quot; &#x2F;sdcard&#x2F;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>刷入前双清，然后和上面的步骤一样，选择<code>/sdcard/</code>里面的卡刷包，别再刷一次扩容包了</p><p>等待进度条跑完，出现这个界面你就成功刷上澎湃OS了：</p><p><img src="/2023/12/10/mix2s-shua-ru-peng-pai-os/image-20231210213610487.png"></p><h3 id="开机"><a href="#开机" class="headerlink" title="开机"></a>开机</h3><p><strong>操作</strong>：把数据线拔出，选择重启系统，会在MIX logo处等待一段时间。一段时间后，出现Hyper OS，刷机就完成了</p><p><img src="/2023/12/10/mix2s-shua-ru-peng-pai-os/image-20231210213851393.png"></p><p>壁纸太好看了</p><p><img src="/2023/12/10/mix2s-shua-ru-peng-pai-os/image-20231210214424325.png"></p><p>护眼模式可以在调色那里调成暖色，然后再自己微调一下</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 刷机教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>SDR笔记</title>
       <link href="/2023/11/01/sdr-bi-ji/"/>
       <url>/2023/11/01/sdr-bi-ji/</url>
